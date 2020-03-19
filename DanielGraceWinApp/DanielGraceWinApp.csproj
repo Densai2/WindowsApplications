@@ -52,6 +52,12 @@
     <Compile Include="Calculator.Designer.cs">
       <DependentUpon>Calculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalculatorEndScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorEndScreen.Designer.cs">
+      <DependentUpon>CalculatorEndScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     </Compile>
     <EmbeddedResource Include="Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CalculatorEndScreen.resx">
+      <DependentUpon>CalculatorEndScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DataEntryForm.resx">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
@@ -112,6 +121,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Rain1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volcanic-twilight-Mt-Pinatubo_Crepuscular-Bob-Harrington.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

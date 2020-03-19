@@ -20,6 +20,9 @@ namespace Calculation
 
         private void Exit_Click(object sender, EventArgs e)
         {
+            CalculatorEndScreen calculatorEnd = new CalculatorEndScreen();
+            calculatorEnd.ShowDialog();
+            calculatorEnd.Close();
             Application.Exit();
         }
 
@@ -86,6 +89,32 @@ namespace Calculation
             SplashCalculator splashcalculator = new SplashCalculator();
             splashcalculator.ShowDialog();
             splashcalculator.Close();
+        }
+
+        private void PowerOf_Click(object sender, EventArgs e)
+        {
+            Double number1, number2, answer;
+            number1 = Convert.ToDouble(FirstNumber.Text);
+            number2 = Convert.ToDouble(SecondNumber.Text);
+            answer = Math.Pow(number1, number2);
+            ResultNumber.Text = answer.ToString();
+        }
+
+        private void Average_Click(object sender, EventArgs e)
+        {
+            Double number1, number2, answer;
+            number1 = Convert.ToDouble(FirstNumber.Text);
+            number2 = Convert.ToDouble(SecondNumber.Text);
+            answer = (number1 + number2) / 2;
+            ResultNumber.Text = answer.ToString();
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            FirstNumber.Text = "";
+            SecondNumber.Text = "";
+            ResultNumber.Text = "";
+
         }
     }
 }

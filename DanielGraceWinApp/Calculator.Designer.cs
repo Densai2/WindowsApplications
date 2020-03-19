@@ -42,6 +42,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.PowerOf = new System.Windows.Forms.Button();
+            this.Average = new System.Windows.Forms.Button();
+            this.Clear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstNumber
@@ -65,7 +68,7 @@
             // Add
             // 
             this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add.Location = new System.Drawing.Point(135, 269);
+            this.Add.Location = new System.Drawing.Point(163, 269);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(84, 33);
             this.Add.TabIndex = 2;
@@ -76,7 +79,7 @@
             // Subtract
             // 
             this.Subtract.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Subtract.Location = new System.Drawing.Point(235, 269);
+            this.Subtract.Location = new System.Drawing.Point(253, 269);
             this.Subtract.Name = "Subtract";
             this.Subtract.Size = new System.Drawing.Size(90, 33);
             this.Subtract.TabIndex = 3;
@@ -87,7 +90,7 @@
             // Muliply
             // 
             this.Muliply.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Muliply.Location = new System.Drawing.Point(352, 269);
+            this.Muliply.Location = new System.Drawing.Point(349, 269);
             this.Muliply.Name = "Muliply";
             this.Muliply.Size = new System.Drawing.Size(84, 33);
             this.Muliply.TabIndex = 4;
@@ -98,7 +101,7 @@
             // Devision
             // 
             this.Devision.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Devision.Location = new System.Drawing.Point(458, 269);
+            this.Devision.Location = new System.Drawing.Point(439, 269);
             this.Devision.Name = "Devision";
             this.Devision.Size = new System.Drawing.Size(84, 33);
             this.Devision.TabIndex = 5;
@@ -110,7 +113,7 @@
             // 
             this.Result.AutoSize = true;
             this.Result.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Result.Location = new System.Drawing.Point(85, 188);
+            this.Result.Location = new System.Drawing.Point(84, 208);
             this.Result.Name = "Result";
             this.Result.Size = new System.Drawing.Size(55, 20);
             this.Result.TabIndex = 6;
@@ -151,7 +154,7 @@
             // 
             this.ResultNumber.AutoSize = true;
             this.ResultNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ResultNumber.Location = new System.Drawing.Point(146, 175);
+            this.ResultNumber.Location = new System.Drawing.Point(145, 195);
             this.ResultNumber.Name = "ResultNumber";
             this.ResultNumber.Size = new System.Drawing.Size(0, 37);
             this.ResultNumber.TabIndex = 10;
@@ -183,12 +186,48 @@
             this.label1.Text = "Simple Calculator";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // PowerOf
+            // 
+            this.PowerOf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PowerOf.Location = new System.Drawing.Point(73, 269);
+            this.PowerOf.Name = "PowerOf";
+            this.PowerOf.Size = new System.Drawing.Size(84, 33);
+            this.PowerOf.TabIndex = 14;
+            this.PowerOf.Text = "Power";
+            this.PowerOf.UseVisualStyleBackColor = true;
+            this.PowerOf.Click += new System.EventHandler(this.PowerOf_Click);
+            // 
+            // Average
+            // 
+            this.Average.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Average.Location = new System.Drawing.Point(529, 269);
+            this.Average.Name = "Average";
+            this.Average.Size = new System.Drawing.Size(90, 33);
+            this.Average.TabIndex = 15;
+            this.Average.Text = "Average";
+            this.Average.UseVisualStyleBackColor = true;
+            this.Average.Click += new System.EventHandler(this.Average_Click);
+            // 
+            // Clear
+            // 
+            this.Clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clear.Location = new System.Drawing.Point(278, 354);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(84, 33);
+            this.Clear.TabIndex = 16;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(631, 401);
+            this.Controls.Add(this.Clear);
+            this.Controls.Add(this.Average);
+            this.Controls.Add(this.PowerOf);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -228,5 +267,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button PowerOf;
+        private System.Windows.Forms.Button Average;
+        private System.Windows.Forms.Button Clear;
     }
 }

@@ -79,5 +79,15 @@ namespace DanielGraceWinApp.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Volcanic_twilight_Mt_Pinatubo_Crepuscular_Bob_Harrington {
+            get {
+                object obj = ResourceManager.GetObject("Volcanic-twilight-Mt-Pinatubo_Crepuscular-Bob-Harrington", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
