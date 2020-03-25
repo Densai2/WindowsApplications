@@ -58,11 +58,23 @@
     <Compile Include="CalculatorEndScreen.Designer.cs">
       <DependentUpon>CalculatorEndScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="CompWins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompWins.Designer.cs">
+      <DependentUpon>CompWins.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DataEntryForm.Designer.cs">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Draw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Draw.Designer.cs">
+      <DependentUpon>Draw.cs</DependentUpon>
     </Compile>
     <Compile Include="LabelControls.cs">
       <SubType>Form</SubType>
@@ -72,11 +84,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPSGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPSGame.Designer.cs">
+      <DependentUpon>RPSGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPSGameOpenSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPSGameOpenSplash.Designer.cs">
+      <DependentUpon>RPSGameOpenSplash.cs</DependentUpon>
+    </Compile>
     <Compile Include="SplashCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SplashCalculator.Designer.cs">
       <DependentUpon>SplashCalculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserWin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserWin.Designer.cs">
+      <DependentUpon>UserWin.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
@@ -84,8 +114,14 @@
     <EmbeddedResource Include="CalculatorEndScreen.resx">
       <DependentUpon>CalculatorEndScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CompWins.resx">
+      <DependentUpon>CompWins.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataEntryForm.resx">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Draw.resx">
+      <DependentUpon>Draw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LabelControls.resx">
       <DependentUpon>LabelControls.cs</DependentUpon>
@@ -100,8 +136,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RPSGame.resx">
+      <DependentUpon>RPSGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPSGameOpenSplash.resx">
+      <DependentUpon>RPSGameOpenSplash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SplashCalculator.resx">
       <DependentUpon>SplashCalculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserWin.resx">
+      <DependentUpon>UserWin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -124,6 +169,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Volcanic-twilight-Mt-Pinatubo_Crepuscular-Bob-Harrington.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-5121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\87b36abed58b3295ff678aae11e3fb66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs_Up_Sign_Emoji_Icon_ios10_large.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbs_Up_Sign_Emoji_Icon_ios10_large1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5897a8c3cba9841eabab6156.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confused-emoji-png.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

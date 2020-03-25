@@ -116,5 +116,14 @@ namespace Calculation
             ResultNumber.Text = "";
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Double number1, number2, answer;
+            number1 = Convert.ToDouble(FirstNumber.Text);
+            number2 = Convert.ToDouble(SecondNumber.Text);
+            answer = number1 + number2;
+            ResultNumber.Text = answer.ToString();
+        }
     }
 }

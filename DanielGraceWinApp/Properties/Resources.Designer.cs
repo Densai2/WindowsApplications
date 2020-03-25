@@ -63,6 +63,106 @@ namespace DanielGraceWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5897a8c3cba9841eabab6156 {
+            get {
+                object obj = ResourceManager.GetObject("5897a8c3cba9841eabab6156", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _87b36abed58b3295ff678aae11e3fb66 {
+            get {
+                object obj = ResourceManager.GetObject("87b36abed58b3295ff678aae11e3fb66", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap confused_emoji_png {
+            get {
+                object obj = ResourceManager.GetObject("confused-emoji-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap face_with_tears_of_joy_emoji_emoticon_crying_smiley_cry {
+            get {
+                object obj = ResourceManager.GetObject("face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap face_with_tears_of_joy_emoji_emoticon_crying_smiley_cry1 {
+            get {
+                object obj = ResourceManager.GetObject("face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap face_with_tears_of_joy_emoji_emoticon_crying_smiley_cry2 {
+            get {
+                object obj = ResourceManager.GetObject("face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Paper {
+            get {
+                object obj = ResourceManager.GetObject("Paper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_256x256 {
+            get {
+                object obj = ResourceManager.GetObject("plus-256x256", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_512 {
+            get {
+                object obj = ResourceManager.GetObject("plus-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_5121 {
+            get {
+                object obj = ResourceManager.GetObject("plus-5121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rain {
             get {
                 object obj = ResourceManager.GetObject("Rain", resourceCulture);
@@ -76,6 +176,46 @@ namespace DanielGraceWinApp.Properties {
         internal static System.Drawing.Bitmap Rain1 {
             get {
                 object obj = ResourceManager.GetObject("Rain1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rock {
+            get {
+                object obj = ResourceManager.GetObject("Rock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Scissors {
+            get {
+                object obj = ResourceManager.GetObject("Scissors", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thumbs_Up_Sign_Emoji_Icon_ios10_large {
+            get {
+                object obj = ResourceManager.GetObject("Thumbs_Up_Sign_Emoji_Icon_ios10_large", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thumbs_Up_Sign_Emoji_Icon_ios10_large1 {
+            get {
+                object obj = ResourceManager.GetObject("Thumbs_Up_Sign_Emoji_Icon_ios10_large1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
