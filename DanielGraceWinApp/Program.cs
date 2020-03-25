@@ -18,7 +18,7 @@ namespace DataEntryForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RPSGame());
+            Application.Run(new CurrencyConverter());
         }
     }
 }
