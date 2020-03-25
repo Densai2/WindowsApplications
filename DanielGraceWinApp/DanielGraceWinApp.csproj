@@ -46,93 +46,102 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs">
+    <Compile Include="Calculator\Calculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calculator.Designer.cs">
+    <Compile Include="Calculator\Calculator.Designer.cs">
       <DependentUpon>Calculator.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalculatorEndScreen.cs">
+    <Compile Include="Calculator\CalculatorEndScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CalculatorEndScreen.Designer.cs">
+    <Compile Include="Calculator\CalculatorEndScreen.Designer.cs">
       <DependentUpon>CalculatorEndScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="CompWins.cs">
+    <Compile Include="PizzaShop\PizzaShop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CompWins.Designer.cs">
+    <Compile Include="PizzaShop\PizzaShop.Designer.cs">
+      <DependentUpon>PizzaShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rock Paper Scissors Game\CompWins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rock Paper Scissors Game\CompWins.Designer.cs">
       <DependentUpon>CompWins.cs</DependentUpon>
     </Compile>
-    <Compile Include="CurrencyConverter.cs">
+    <Compile Include="CurrencyConverter\CurrencyConverter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CurrencyConverter.Designer.cs">
+    <Compile Include="CurrencyConverter\CurrencyConverter.Designer.cs">
       <DependentUpon>CurrencyConverter.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataEntryForm.cs">
+    <Compile Include="Data Entry Form\DataEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataEntryForm.Designer.cs">
+    <Compile Include="Data Entry Form\DataEntryForm.Designer.cs">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Draw.cs">
+    <Compile Include="Rock Paper Scissors Game\Draw.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Draw.Designer.cs">
+    <Compile Include="Rock Paper Scissors Game\Draw.Designer.cs">
       <DependentUpon>Draw.cs</DependentUpon>
     </Compile>
-    <Compile Include="LabelControls.cs">
+    <Compile Include="Label Controls\LabelControls.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LabelControls.Designer.cs">
+    <Compile Include="Label Controls\LabelControls.Designer.cs">
       <DependentUpon>LabelControls.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RPSGame.cs">
+    <Compile Include="Rock Paper Scissors Game\RPSGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RPSGame.Designer.cs">
+    <Compile Include="Rock Paper Scissors Game\RPSGame.Designer.cs">
       <DependentUpon>RPSGame.cs</DependentUpon>
     </Compile>
-    <Compile Include="RPSGameOpenSplash.cs">
+    <Compile Include="Rock Paper Scissors Game\RPSGameOpenSplash.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RPSGameOpenSplash.Designer.cs">
+    <Compile Include="Rock Paper Scissors Game\RPSGameOpenSplash.Designer.cs">
       <DependentUpon>RPSGameOpenSplash.cs</DependentUpon>
     </Compile>
-    <Compile Include="SplashCalculator.cs">
+    <Compile Include="Calculator\SplashCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SplashCalculator.Designer.cs">
+    <Compile Include="Calculator\SplashCalculator.Designer.cs">
       <DependentUpon>SplashCalculator.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserWin.cs">
+    <Compile Include="Rock Paper Scissors Game\UserWin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserWin.Designer.cs">
+    <Compile Include="Rock Paper Scissors Game\UserWin.Designer.cs">
       <DependentUpon>UserWin.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Calculator.resx">
+    <EmbeddedResource Include="Calculator\Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CalculatorEndScreen.resx">
+    <EmbeddedResource Include="Calculator\CalculatorEndScreen.resx">
       <DependentUpon>CalculatorEndScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CompWins.resx">
+    <EmbeddedResource Include="PizzaShop\PizzaShop.resx">
+      <DependentUpon>PizzaShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rock Paper Scissors Game\CompWins.resx">
       <DependentUpon>CompWins.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CurrencyConverter.resx">
+    <EmbeddedResource Include="CurrencyConverter\CurrencyConverter.resx">
       <DependentUpon>CurrencyConverter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DataEntryForm.resx">
+    <EmbeddedResource Include="Data Entry Form\DataEntryForm.resx">
       <DependentUpon>DataEntryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Draw.resx">
+    <EmbeddedResource Include="Rock Paper Scissors Game\Draw.resx">
       <DependentUpon>Draw.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LabelControls.resx">
+    <EmbeddedResource Include="Label Controls\LabelControls.resx">
       <DependentUpon>LabelControls.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -145,16 +154,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RPSGame.resx">
+    <EmbeddedResource Include="Rock Paper Scissors Game\RPSGame.resx">
       <DependentUpon>RPSGame.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RPSGameOpenSplash.resx">
+    <EmbeddedResource Include="Rock Paper Scissors Game\RPSGameOpenSplash.resx">
       <DependentUpon>RPSGameOpenSplash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashCalculator.resx">
+    <EmbeddedResource Include="Calculator\SplashCalculator.resx">
       <DependentUpon>SplashCalculator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserWin.resx">
+    <EmbeddedResource Include="Rock Paper Scissors Game\UserWin.resx">
       <DependentUpon>UserWin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

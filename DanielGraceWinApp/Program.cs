@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Calculation;
 using DanielGraceWinApp;
+using DanielGraceWinApp.PizzaShop;
 
 namespace DataEntryForm
 {
@@ -18,7 +19,7 @@ namespace DataEntryForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CurrencyConverter());
+            Application.Run(new PizzaShop());
         }
     }
 }
