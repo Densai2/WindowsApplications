@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using Calculation;
 using DanielGraceWinApp;
 using DanielGraceWinApp.PizzaShop;
+using DanielGraceWinApp.MonkeyBash;
 
 namespace DataEntryForm
 {
@@ -19,7 +20,7 @@ namespace DataEntryForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PizzaShop());
+            Application.Run(new MyPad());
         }
     }
 }

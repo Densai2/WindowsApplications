@@ -83,6 +83,17 @@ namespace DanielGraceWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bb51ff63faf867d645328761f4197f74_free_restaurant_cliparts_free_download_clip_art_webcomicmsnet_840_592 {
+            get {
+                object obj = ResourceManager.GetObject("bb51ff63faf867d645328761f4197f74_free-restaurant-cliparts-free-download-clip-art-" +
+                        "webcomicmsnet_840-592", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap confused_emoji_png {
             get {
                 object obj = ResourceManager.GetObject("confused-emoji-png", resourceCulture);
@@ -116,6 +127,16 @@ namespace DanielGraceWinApp.Properties {
         internal static System.Drawing.Bitmap face_with_tears_of_joy_emoji_emoticon_crying_smiley_cry2 {
             get {
                 object obj = ResourceManager.GetObject("face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap monkey_png_transparent_images_png_only_6 {
+            get {
+                object obj = ResourceManager.GetObject("monkey-png-transparent-images-png-only-6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +237,26 @@ namespace DanielGraceWinApp.Properties {
         internal static System.Drawing.Bitmap Thumbs_Up_Sign_Emoji_Icon_ios10_large1 {
             get {
                 object obj = ResourceManager.GetObject("Thumbs_Up_Sign_Emoji_Icon_ios10_large1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed {
+            get {
+                object obj = ResourceManager.GetObject("unnamed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed1 {
+            get {
+                object obj = ResourceManager.GetObject("unnamed1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

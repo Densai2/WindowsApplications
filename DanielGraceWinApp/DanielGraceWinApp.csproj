@@ -58,11 +58,29 @@
     <Compile Include="Calculator\CalculatorEndScreen.Designer.cs">
       <DependentUpon>CalculatorEndScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="MonkeyBash\MonkeyBash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonkeyBash\MonkeyBash.Designer.cs">
+      <DependentUpon>MonkeyBash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPad\MyPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyPad\MyPad.Designer.cs">
+      <DependentUpon>MyPad.cs</DependentUpon>
+    </Compile>
     <Compile Include="PizzaShop\PizzaShop.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PizzaShop\PizzaShop.Designer.cs">
       <DependentUpon>PizzaShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Posh Nosh\PoshNosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Posh Nosh\PoshNosh.Designer.cs">
+      <DependentUpon>PoshNosh.cs</DependentUpon>
     </Compile>
     <Compile Include="Rock Paper Scissors Game\CompWins.cs">
       <SubType>Form</SubType>
@@ -126,8 +144,17 @@
     <EmbeddedResource Include="Calculator\CalculatorEndScreen.resx">
       <DependentUpon>CalculatorEndScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MonkeyBash\MonkeyBash.resx">
+      <DependentUpon>MonkeyBash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPad\MyPad.resx">
+      <DependentUpon>MyPad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PizzaShop\PizzaShop.resx">
       <DependentUpon>PizzaShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Posh Nosh\PoshNosh.resx">
+      <DependentUpon>PoshNosh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rock Paper Scissors Game\CompWins.resx">
       <DependentUpon>CompWins.cs</DependentUpon>
@@ -229,6 +256,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\confused-emoji-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bb51ff63faf867d645328761f4197f74_free-restaurant-cliparts-free-download-clip-art-webcomicmsnet_840-592.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey-png-transparent-images-png-only-6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
