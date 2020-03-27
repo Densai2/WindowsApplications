@@ -70,6 +70,12 @@
     <Compile Include="MyPad\MyPad.Designer.cs">
       <DependentUpon>MyPad.cs</DependentUpon>
     </Compile>
+    <Compile Include="Monster Images\Pictures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monster Images\Pictures.Designer.cs">
+      <DependentUpon>Pictures.cs</DependentUpon>
+    </Compile>
     <Compile Include="PizzaShop\PizzaShop.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,24 @@
     <Compile Include="Rock Paper Scissors Game\UserWin.Designer.cs">
       <DependentUpon>UserWin.cs</DependentUpon>
     </Compile>
+    <Compile Include="TargetPractice\TargetPractice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TargetPractice\TargetPractice.Designer.cs">
+      <DependentUpon>TargetPractice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipster\Calculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipster\Calculate.Designer.cs">
+      <DependentUpon>Calculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipster\Tipster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipster\Tipster.Designer.cs">
+      <DependentUpon>Tipster.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Calculator\Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyPad\MyPad.resx">
       <DependentUpon>MyPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monster Images\Pictures.resx">
+      <DependentUpon>Pictures.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PizzaShop\PizzaShop.resx">
       <DependentUpon>PizzaShop.cs</DependentUpon>
@@ -192,6 +219,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rock Paper Scissors Game\UserWin.resx">
       <DependentUpon>UserWin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TargetPractice\TargetPractice.resx">
+      <DependentUpon>TargetPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipster\Calculate.resx">
+      <DependentUpon>Calculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipster\Tipster.resx">
+      <DependentUpon>Tipster.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -268,6 +304,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\monkey-png-transparent-images-png-only-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Target_Corporation_logo_%28vector%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Target_Corporation_logo_%28vector%29.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monkey-png-transparent-images-png-only-61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2a0e4aedfe11ec30c9fc5b6f20567479.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sainsburys-louise-bolton-car-damage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

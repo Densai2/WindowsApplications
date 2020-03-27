@@ -7,6 +7,8 @@ using Calculation;
 using DanielGraceWinApp;
 using DanielGraceWinApp.PizzaShop;
 using DanielGraceWinApp.MonkeyBash;
+using DanielGraceWinApp.TargetPractice;
+using DanielGraceWinApp.Tipster;
 
 namespace DataEntryForm
 {
@@ -20,7 +22,7 @@ namespace DataEntryForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MyPad());
+            Application.Run(new Tipster());
         }
     }
 }
