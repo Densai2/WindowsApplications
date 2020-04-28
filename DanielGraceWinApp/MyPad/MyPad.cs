@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace DanielGraceWinApp
 {
+    /// <summary>
+    /// This form allows the user to create text
+    /// document with many different features.
+    /// </summary>
     public partial class MyPad : Form
     {
         public MyPad()
@@ -17,72 +21,57 @@ namespace DanielGraceWinApp
             InitializeComponent();
         }
 
-        private void newToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CutText(object sender, EventArgs e)
         {
             txtMain.Cut();
         }
 
-        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CopyText(object sender, EventArgs e)
         {
             txtMain.Copy();
         }
 
-        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
+        private void PasteText(object sender, EventArgs e)
         {
             txtMain.Paste();
         }
 
-        private void MyPad_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void undoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void UndoText(object sender, EventArgs e)
         {
             txtMain.Undo();
         }
 
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveFile(object sender, EventArgs e)
         {
             sfd.ShowDialog();
             txtMain.SaveFile(sfd.FileName);
 
         }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OpenFile(object sender, EventArgs e)
         {
             txtMain.LoadFile(ofd.FileName);
         }
 
-        private void fd_Apply(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FontChoice(object sender, EventArgs e)
         {
             fd.ShowDialog();
             txtMain.Font = fd.Font;
         }
 
-        private void backgroundColourToolStripMenuItem_Click(object sender, EventArgs e)
+        private void FontColour(object sender, EventArgs e)
         {
             cd.ShowDialog();
             txtMain.BackColor = cd.Color;
         }
 
-        private void foregroundColourToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ForegroundColour(object sender, EventArgs e)
         {
             cd.ShowDialog();
             txtMain.ForeColor = cd.Color;
         }
 
-        private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        private void ScrollBar(object sender, ScrollEventArgs e)
         {
             Font f = new Font(txtMain.Font.Name, 20, FontStyle.Regular);
             txtMain.SelectionFont = f;

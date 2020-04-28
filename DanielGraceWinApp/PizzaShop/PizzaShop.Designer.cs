@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grpToppings = new System.Windows.Forms.GroupBox();
+            this.Toppings = new System.Windows.Forms.GroupBox();
             this.Chocolate = new System.Windows.Forms.CheckBox();
             this.Pepperoni = new System.Windows.Forms.CheckBox();
             this.Rhubard = new System.Windows.Forms.CheckBox();
             this.Pineapple = new System.Windows.Forms.CheckBox();
-            this.grpPizzaCost = new System.Windows.Forms.GroupBox();
+            this.PizzaCost = new System.Windows.Forms.GroupBox();
             this.EndCost = new System.Windows.Forms.Label();
-            this.grpPizzaType = new System.Windows.Forms.GroupBox();
+            this.PizzaType = new System.Windows.Forms.GroupBox();
             this.Small = new System.Windows.Forms.RadioButton();
             this.Medium = new System.Windows.Forms.RadioButton();
             this.Large = new System.Windows.Forms.RadioButton();
-            this.grpToppings.SuspendLayout();
-            this.grpPizzaCost.SuspendLayout();
-            this.grpPizzaType.SuspendLayout();
+            this.Toppings.SuspendLayout();
+            this.PizzaCost.SuspendLayout();
+            this.PizzaType.SuspendLayout();
             this.SuspendLayout();
             // 
-            // grpToppings
+            // Toppings
             // 
-            this.grpToppings.Controls.Add(this.Chocolate);
-            this.grpToppings.Controls.Add(this.Pepperoni);
-            this.grpToppings.Controls.Add(this.Rhubard);
-            this.grpToppings.Controls.Add(this.Pineapple);
-            this.grpToppings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpToppings.Location = new System.Drawing.Point(435, 55);
-            this.grpToppings.Name = "grpToppings";
-            this.grpToppings.Size = new System.Drawing.Size(327, 277);
-            this.grpToppings.TabIndex = 0;
-            this.grpToppings.TabStop = false;
-            this.grpToppings.Text = "Toppings";
+            this.Toppings.Controls.Add(this.Chocolate);
+            this.Toppings.Controls.Add(this.Pepperoni);
+            this.Toppings.Controls.Add(this.Rhubard);
+            this.Toppings.Controls.Add(this.Pineapple);
+            this.Toppings.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Toppings.Location = new System.Drawing.Point(435, 55);
+            this.Toppings.Name = "Toppings";
+            this.Toppings.Size = new System.Drawing.Size(327, 277);
+            this.Toppings.TabIndex = 0;
+            this.Toppings.TabStop = false;
+            this.Toppings.Text = "Toppings";
             // 
             // Chocolate
             // 
@@ -67,7 +67,7 @@
             this.Chocolate.TabIndex = 3;
             this.Chocolate.Text = "Chocolate";
             this.Chocolate.UseVisualStyleBackColor = true;
-            this.Chocolate.CheckedChanged += new System.EventHandler(this.Chocolate_CheckedChanged);
+            this.Chocolate.CheckedChanged += new System.EventHandler(this.Chocolate_Checked);
             // 
             // Pepperoni
             // 
@@ -78,7 +78,7 @@
             this.Pepperoni.TabIndex = 2;
             this.Pepperoni.Text = "Pepperoni Vindaloo";
             this.Pepperoni.UseVisualStyleBackColor = true;
-            this.Pepperoni.CheckedChanged += new System.EventHandler(this.Pepperoni_CheckedChanged);
+            this.Pepperoni.CheckedChanged += new System.EventHandler(this.Pepperoni_Checked);
             // 
             // Rhubard
             // 
@@ -89,7 +89,7 @@
             this.Rhubard.TabIndex = 1;
             this.Rhubard.Text = "Rhubard and Custard";
             this.Rhubard.UseVisualStyleBackColor = true;
-            this.Rhubard.CheckedChanged += new System.EventHandler(this.Rhubard_CheckedChanged);
+            this.Rhubard.CheckedChanged += new System.EventHandler(this.Rhubard_Checked);
             // 
             // Pineapple
             // 
@@ -100,19 +100,17 @@
             this.Pineapple.TabIndex = 0;
             this.Pineapple.Text = "Pineapple and Cauliflower";
             this.Pineapple.UseVisualStyleBackColor = true;
-            this.Pineapple.CheckedChanged += new System.EventHandler(this.Pineapple_CheckedChanged);
+            this.Pineapple.CheckedChanged += new System.EventHandler(this.Pineapple_Checked);
             // 
-            // grpPizzaCost
+            // PizzaCost
             // 
-            this.grpPizzaCost.Controls.Add(this.EndCost);
-            this.grpPizzaCost.Location = new System.Drawing.Point(176, 338);
-            this.grpPizzaCost.Name = "grpPizzaCost";
-            this.grpPizzaCost.Size = new System.Drawing.Size(488, 100);
-            this.grpPizzaCost.TabIndex = 1;
-            this.grpPizzaCost.TabStop = false;
-            this.grpPizzaCost.Text = "Pizza Cost";
-            this.grpPizzaCost.Enter += new System.EventHandler(this.grpPizzaCost_Enter);
-            // 
+            this.PizzaCost.Controls.Add(this.EndCost);
+            this.PizzaCost.Location = new System.Drawing.Point(176, 338);
+            this.PizzaCost.Name = "PizzaCost";
+            this.PizzaCost.Size = new System.Drawing.Size(488, 100);
+            this.PizzaCost.TabIndex = 1;
+            this.PizzaCost.TabStop = false;
+            this.PizzaCost.Text = "Pizza Cost";            // 
             // EndCost
             // 
             this.EndCost.AutoSize = true;
@@ -120,21 +118,19 @@
             this.EndCost.Location = new System.Drawing.Point(23, 40);
             this.EndCost.Name = "EndCost";
             this.EndCost.Size = new System.Drawing.Size(0, 25);
-            this.EndCost.TabIndex = 0;
-            this.EndCost.Click += new System.EventHandler(this.label1_Click);
+            this.EndCost.TabIndex = 0;            // 
+            // PizzaType
             // 
-            // grpPizzaType
-            // 
-            this.grpPizzaType.Controls.Add(this.Small);
-            this.grpPizzaType.Controls.Add(this.Medium);
-            this.grpPizzaType.Controls.Add(this.Large);
-            this.grpPizzaType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpPizzaType.Location = new System.Drawing.Point(85, 55);
-            this.grpPizzaType.Name = "grpPizzaType";
-            this.grpPizzaType.Size = new System.Drawing.Size(227, 277);
-            this.grpPizzaType.TabIndex = 2;
-            this.grpPizzaType.TabStop = false;
-            this.grpPizzaType.Text = "Pizza Type";
+            this.PizzaType.Controls.Add(this.Small);
+            this.PizzaType.Controls.Add(this.Medium);
+            this.PizzaType.Controls.Add(this.Large);
+            this.PizzaType.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PizzaType.Location = new System.Drawing.Point(85, 55);
+            this.PizzaType.Name = "PizzaType";
+            this.PizzaType.Size = new System.Drawing.Size(227, 277);
+            this.PizzaType.TabIndex = 2;
+            this.PizzaType.TabStop = false;
+            this.PizzaType.Text = "Pizza Type";
             // 
             // Small
             // 
@@ -146,7 +142,7 @@
             this.Small.TabStop = true;
             this.Small.Text = "Small";
             this.Small.UseVisualStyleBackColor = true;
-            this.Small.CheckedChanged += new System.EventHandler(this.Small_CheckedChanged);
+            this.Small.CheckedChanged += new System.EventHandler(this.Small_Checked);
             // 
             // Medium
             // 
@@ -158,7 +154,7 @@
             this.Medium.TabStop = true;
             this.Medium.Text = "Medium";
             this.Medium.UseVisualStyleBackColor = true;
-            this.Medium.CheckedChanged += new System.EventHandler(this.Medium_CheckedChanged);
+            this.Medium.CheckedChanged += new System.EventHandler(this.Medium_Checked);
             // 
             // Large
             // 
@@ -170,38 +166,37 @@
             this.Large.TabStop = true;
             this.Large.Text = "Large";
             this.Large.UseVisualStyleBackColor = true;
-            this.Large.CheckedChanged += new System.EventHandler(this.Large_CheckedChanged);
+            this.Large.CheckedChanged += new System.EventHandler(this.Large_Checked);
             // 
             // PizzaShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.grpPizzaType);
-            this.Controls.Add(this.grpPizzaCost);
-            this.Controls.Add(this.grpToppings);
+            this.Controls.Add(this.PizzaType);
+            this.Controls.Add(this.PizzaCost);
+            this.Controls.Add(this.Toppings);
             this.Name = "PizzaShop";
             this.Text = "Pizza Shop Selection Screen";
-            this.Load += new System.EventHandler(this.PizzaShop_Load);
-            this.grpToppings.ResumeLayout(false);
-            this.grpToppings.PerformLayout();
-            this.grpPizzaCost.ResumeLayout(false);
-            this.grpPizzaCost.PerformLayout();
-            this.grpPizzaType.ResumeLayout(false);
-            this.grpPizzaType.PerformLayout();
+            this.Toppings.ResumeLayout(false);
+            this.Toppings.PerformLayout();
+            this.PizzaCost.ResumeLayout(false);
+            this.PizzaCost.PerformLayout();
+            this.PizzaType.ResumeLayout(false);
+            this.PizzaType.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox grpToppings;
+        private System.Windows.Forms.GroupBox Toppings;
         private System.Windows.Forms.CheckBox Chocolate;
         private System.Windows.Forms.CheckBox Pepperoni;
         private System.Windows.Forms.CheckBox Rhubard;
         private System.Windows.Forms.CheckBox Pineapple;
-        private System.Windows.Forms.GroupBox grpPizzaCost;
-        private System.Windows.Forms.GroupBox grpPizzaType;
+        private System.Windows.Forms.GroupBox PizzaCost;
+        private System.Windows.Forms.GroupBox PizzaType;
         private System.Windows.Forms.RadioButton Small;
         private System.Windows.Forms.RadioButton Medium;
         private System.Windows.Forms.RadioButton Large;

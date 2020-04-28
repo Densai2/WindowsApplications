@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.YouWon = new System.Windows.Forms.Label();
+            this.ThumbsUp = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ThumbsUp)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // YouWon
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Orange;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(344, 119);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "You Won!!!";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.YouWon.AutoSize = true;
+            this.YouWon.BackColor = System.Drawing.Color.Orange;
+            this.YouWon.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YouWon.Location = new System.Drawing.Point(344, 119);
+            this.YouWon.Name = "YouWon";
+            this.YouWon.Size = new System.Drawing.Size(218, 46);
+            this.YouWon.TabIndex = 0;
+            this.YouWon.Text = "You Won!!!";
+            this.YouWon.Click += new System.EventHandler(this.YouWin);
             // 
-            // pictureBox1
+            // ThumbsUp
             // 
-            this.pictureBox1.BackgroundImage = global::DanielGraceWinApp.Properties.Resources.Thumbs_Up_Sign_Emoji_Icon_ios10_large1;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(361, 217);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(191, 224);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.ThumbsUp.BackgroundImage = global::DanielGraceWinApp.Properties.Resources.Thumbs_Up_Sign_Emoji_Icon_ios10_large1;
+            this.ThumbsUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ThumbsUp.Location = new System.Drawing.Point(361, 217);
+            this.ThumbsUp.Name = "ThumbsUp";
+            this.ThumbsUp.Size = new System.Drawing.Size(191, 224);
+            this.ThumbsUp.TabIndex = 1;
+            this.ThumbsUp.TabStop = false;
+            this.ThumbsUp.Click += new System.EventHandler(this.HappyFace);
             // 
             // UserWin
             // 
@@ -62,15 +62,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(939, 619);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ThumbsUp);
+            this.Controls.Add(this.YouWon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserWin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UserWin";
-            this.Load += new System.EventHandler(this.UserWin_Load);
-            this.Click += new System.EventHandler(this.UserWin_Click);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Click += new System.EventHandler(this.UserWon);
+            ((System.ComponentModel.ISupportInitialize)(this.ThumbsUp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,7 +77,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label YouWon;
+        private System.Windows.Forms.PictureBox ThumbsUp;
     }
 }

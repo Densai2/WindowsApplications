@@ -12,38 +12,31 @@ namespace DanielGraceWinApp
 {
     public partial class RPSGameOpenSplash : Form
     {
+        /// <summary>
+        /// Once RPS game has been started, this
+        /// splash screen will display to welcome.
+        /// </summary>
         public RPSGameOpenSplash()
         {
             InitializeComponent();
         }
 
-        private void Rock_Click(object sender, EventArgs e)
-        {
-            
-            
-        }
-
-        private void RPSGameOpenSplash_Click(object sender, EventArgs e)
+        private void RPSGame_OpenSplash(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void RPSGameOpenSplash_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void ImageRock(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void ImagePaper(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void ImageScissors(object sender, EventArgs e)
         {
             this.Close();
         }

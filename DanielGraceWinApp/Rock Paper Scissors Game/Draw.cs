@@ -12,22 +12,26 @@ namespace DanielGraceWinApp
 {
     public partial class Draw : Form
     {
+        /// <summary>
+        /// This splash screen is when both sides
+        /// draw, allowing them to exit once clicked.
+        /// </summary>
         public Draw()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void FrownFace(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Drew(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void Draw_Click(object sender, EventArgs e)
+        private void Drawn(object sender, EventArgs e)
         {
             Close();
         }

@@ -35,7 +35,7 @@
             this.Message = new System.Windows.Forms.Label();
             this.FirstNameBox = new System.Windows.Forms.TextBox();
             this.SecondNameBox = new System.Windows.Forms.TextBox();
-            this.Message1 = new System.Windows.Forms.Button();
+            this.DisplayMessage = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
             this.UpperCase = new System.Windows.Forms.Button();
             this.MessageChange = new System.Windows.Forms.Button();
@@ -63,7 +63,7 @@
             this.Quit.TabIndex = 1;
             this.Quit.Text = "&Quit";
             this.Quit.UseVisualStyleBackColor = true;
-            this.Quit.Click += new System.EventHandler(this.Quit_Click);
+            this.Quit.Click += new System.EventHandler(this.Exit);
             // 
             // FirstName
             // 
@@ -95,7 +95,6 @@
             this.Message.Name = "Message";
             this.Message.Size = new System.Drawing.Size(2, 26);
             this.Message.TabIndex = 4;
-            this.Message.Click += new System.EventHandler(this.Message_Click);
             // 
             // FirstNameBox
             // 
@@ -105,7 +104,6 @@
             this.FirstNameBox.Name = "FirstNameBox";
             this.FirstNameBox.Size = new System.Drawing.Size(175, 29);
             this.FirstNameBox.TabIndex = 5;
-            this.FirstNameBox.TextChanged += new System.EventHandler(this.FirstNameBox_TextChanged);
             // 
             // SecondNameBox
             // 
@@ -115,17 +113,16 @@
             this.SecondNameBox.Name = "SecondNameBox";
             this.SecondNameBox.Size = new System.Drawing.Size(175, 29);
             this.SecondNameBox.TabIndex = 6;
-            this.SecondNameBox.TextChanged += new System.EventHandler(this.SecondNameBox_TextChanged);
             // 
-            // Message1
+            // DisplayMessage
             // 
-            this.Message1.Location = new System.Drawing.Point(193, 292);
-            this.Message1.Name = "Message1";
-            this.Message1.Size = new System.Drawing.Size(75, 23);
-            this.Message1.TabIndex = 7;
-            this.Message1.Text = "&Message";
-            this.Message1.UseVisualStyleBackColor = true;
-            this.Message1.Click += new System.EventHandler(this.Message1_Click);
+            this.DisplayMessage.Location = new System.Drawing.Point(193, 292);
+            this.DisplayMessage.Name = "DisplayMessage";
+            this.DisplayMessage.Size = new System.Drawing.Size(75, 23);
+            this.DisplayMessage.TabIndex = 7;
+            this.DisplayMessage.Text = "&Message";
+            this.DisplayMessage.UseVisualStyleBackColor = true;
+            this.DisplayMessage.Click += new System.EventHandler(this.MessageToUser);
             // 
             // Clear
             // 
@@ -145,7 +142,7 @@
             this.UpperCase.TabIndex = 9;
             this.UpperCase.Text = "&Upper case";
             this.UpperCase.UseVisualStyleBackColor = true;
-            this.UpperCase.Click += new System.EventHandler(this.UpperCase_Click);
+            this.UpperCase.Click += new System.EventHandler(this.Capitals);
             // 
             // MessageChange
             // 
@@ -153,9 +150,9 @@
             this.MessageChange.Name = "MessageChange";
             this.MessageChange.Size = new System.Drawing.Size(102, 25);
             this.MessageChange.TabIndex = 10;
-            this.MessageChange.Text = "ChangeMessage";
+            this.MessageChange.Text = "Change Message";
             this.MessageChange.UseVisualStyleBackColor = true;
-            this.MessageChange.Click += new System.EventHandler(this.MessageChange_Click);
+            this.MessageChange.Click += new System.EventHandler(this.ChangeColour);
             // 
             // Town
             // 
@@ -175,7 +172,6 @@
             this.TownBox.Name = "TownBox";
             this.TownBox.Size = new System.Drawing.Size(175, 29);
             this.TownBox.TabIndex = 12;
-            this.TownBox.TextChanged += new System.EventHandler(this.TownBox_TextChanged);
             // 
             // DataEntryForm
             // 
@@ -188,7 +184,7 @@
             this.Controls.Add(this.MessageChange);
             this.Controls.Add(this.UpperCase);
             this.Controls.Add(this.Clear);
-            this.Controls.Add(this.Message1);
+            this.Controls.Add(this.DisplayMessage);
             this.Controls.Add(this.SecondNameBox);
             this.Controls.Add(this.FirstNameBox);
             this.Controls.Add(this.Message);
@@ -200,7 +196,6 @@
             this.Name = "DataEntryForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DataEntryForm";
-            this.Load += new System.EventHandler(this.DataEntryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,7 +210,7 @@
         private System.Windows.Forms.Label Message;
         private System.Windows.Forms.TextBox FirstNameBox;
         private System.Windows.Forms.TextBox SecondNameBox;
-        private System.Windows.Forms.Button Message1;
+        private System.Windows.Forms.Button DisplayMessage;
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button UpperCase;
         private System.Windows.Forms.Button MessageChange;

@@ -11,6 +11,11 @@ using System.Windows.Forms;
 
 namespace DataEntryForm
 {
+    /// <summary>
+    /// The form will take the user's first name, second
+    /// and town to then add to a sentence with their 
+    /// details.
+    /// </summary>
     public partial class DataEntryForm : Form
     {
         public DataEntryForm()
@@ -18,17 +23,7 @@ namespace DataEntryForm
             InitializeComponent();
         }
 
-        private void FirstNameBox_TextChanged(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void DataEntryForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Quit_Click(object sender, EventArgs e)
+        private void Exit(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -38,35 +33,20 @@ namespace DataEntryForm
             Message.Text = "";
         }
 
-        private void Message1_Click(object sender, EventArgs e)
+        private void MessageToUser(object sender, EventArgs e)
         {
             Message.Text = "Hey, " + FirstNameBox.Text + " " + SecondNameBox.Text + "\n Happy programming" +  "\n Also, I didn't know you lived in " + TownBox.Text  + "!";
         }
 
-        private void Message_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void UpperCase_Click(object sender, EventArgs e)
+        private void Capitals(object sender, EventArgs e)
         {
             Message.Text = Message.Text.ToUpper();
         }
 
-        private void MessageChange_Click(object sender, EventArgs e)
+        private void ChangeColour(object sender, EventArgs e)
         {
             this.BackColor = Color.Red;
             
-        }
-
-        private void SecondNameBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TownBox_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

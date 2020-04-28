@@ -36,12 +36,12 @@
             this.Devision = new System.Windows.Forms.Button();
             this.Result = new System.Windows.Forms.Label();
             this.Exit = new System.Windows.Forms.Button();
-            this.Number1 = new System.Windows.Forms.Label();
-            this.Number2 = new System.Windows.Forms.Label();
+            this.LabelNumberOne = new System.Windows.Forms.Label();
+            this.LabelNumberTwo = new System.Windows.Forms.Label();
             this.ResultNumber = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LineOne = new System.Windows.Forms.Panel();
+            this.LineTwo = new System.Windows.Forms.Panel();
+            this.LabelTitle = new System.Windows.Forms.Label();
             this.PowerOf = new System.Windows.Forms.Button();
             this.Average = new System.Windows.Forms.Button();
             this.Clear = new System.Windows.Forms.Button();
@@ -54,7 +54,6 @@
             this.FirstNumber.Name = "FirstNumber";
             this.FirstNumber.Size = new System.Drawing.Size(100, 44);
             this.FirstNumber.TabIndex = 0;
-            this.FirstNumber.TextChanged += new System.EventHandler(this.FirstNumber_TextChanged);
             // 
             // SecondNumber
             // 
@@ -63,7 +62,6 @@
             this.SecondNumber.Name = "SecondNumber";
             this.SecondNumber.Size = new System.Drawing.Size(100, 44);
             this.SecondNumber.TabIndex = 1;
-            this.SecondNumber.TextChanged += new System.EventHandler(this.SecondNumber_TextChanged);
             // 
             // Add
             // 
@@ -74,7 +72,7 @@
             this.Add.TabIndex = 2;
             this.Add.Text = "Add";
             this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
+            this.Add.Click += new System.EventHandler(this.Addition);
             // 
             // Subtract
             // 
@@ -85,7 +83,7 @@
             this.Subtract.TabIndex = 3;
             this.Subtract.Text = "Subtract";
             this.Subtract.UseVisualStyleBackColor = true;
-            this.Subtract.Click += new System.EventHandler(this.Subtract_Click);
+            this.Subtract.Click += new System.EventHandler(this.Subtraction);
             // 
             // Muliply
             // 
@@ -96,7 +94,7 @@
             this.Muliply.TabIndex = 4;
             this.Muliply.Text = "Multiply";
             this.Muliply.UseVisualStyleBackColor = true;
-            this.Muliply.Click += new System.EventHandler(this.Muliply_Click);
+            this.Muliply.Click += new System.EventHandler(this.Multiplication);
             // 
             // Devision
             // 
@@ -107,7 +105,7 @@
             this.Devision.TabIndex = 5;
             this.Devision.Text = "Divide";
             this.Devision.UseVisualStyleBackColor = true;
-            this.Devision.Click += new System.EventHandler(this.Devision_Click);
+            this.Devision.Click += new System.EventHandler(this.Divide);
             // 
             // Result
             // 
@@ -128,27 +126,27 @@
             this.Exit.TabIndex = 7;
             this.Exit.Text = "Exit";
             this.Exit.UseVisualStyleBackColor = true;
-            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            this.Exit.Click += new System.EventHandler(this.ExitButton);
             // 
-            // Number1
+            // LabelNumberOne
             // 
-            this.Number1.AutoSize = true;
-            this.Number1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number1.Location = new System.Drawing.Point(84, 72);
-            this.Number1.Name = "Number1";
-            this.Number1.Size = new System.Drawing.Size(135, 20);
-            this.Number1.TabIndex = 8;
-            this.Number1.Text = "Your first number:";
+            this.LabelNumberOne.AutoSize = true;
+            this.LabelNumberOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelNumberOne.Location = new System.Drawing.Point(84, 72);
+            this.LabelNumberOne.Name = "LabelNumberOne";
+            this.LabelNumberOne.Size = new System.Drawing.Size(135, 20);
+            this.LabelNumberOne.TabIndex = 8;
+            this.LabelNumberOne.Text = "Your first number:";
             // 
-            // Number2
+            // LabelNumberTwo
             // 
-            this.Number2.AutoSize = true;
-            this.Number2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Number2.Location = new System.Drawing.Point(84, 139);
-            this.Number2.Name = "Number2";
-            this.Number2.Size = new System.Drawing.Size(161, 20);
-            this.Number2.TabIndex = 9;
-            this.Number2.Text = "Your second number:";
+            this.LabelNumberTwo.AutoSize = true;
+            this.LabelNumberTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelNumberTwo.Location = new System.Drawing.Point(84, 139);
+            this.LabelNumberTwo.Name = "LabelNumberTwo";
+            this.LabelNumberTwo.Size = new System.Drawing.Size(161, 20);
+            this.LabelNumberTwo.TabIndex = 9;
+            this.LabelNumberTwo.Text = "Your second number:";
             // 
             // ResultNumber
             // 
@@ -159,32 +157,31 @@
             this.ResultNumber.Size = new System.Drawing.Size(0, 37);
             this.ResultNumber.TabIndex = 10;
             // 
-            // panel1
+            // LineOne
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Location = new System.Drawing.Point(73, 45);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(510, 12);
-            this.panel1.TabIndex = 11;
+            this.LineOne.BackColor = System.Drawing.Color.Black;
+            this.LineOne.Location = new System.Drawing.Point(73, 45);
+            this.LineOne.Name = "LineOne";
+            this.LineOne.Size = new System.Drawing.Size(510, 12);
+            this.LineOne.TabIndex = 11;
             // 
-            // panel2
+            // LineTwo
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(88, 324);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(510, 12);
-            this.panel2.TabIndex = 12;
+            this.LineTwo.BackColor = System.Drawing.Color.Black;
+            this.LineTwo.Location = new System.Drawing.Point(88, 324);
+            this.LineTwo.Name = "LineTwo";
+            this.LineTwo.Size = new System.Drawing.Size(510, 12);
+            this.LineTwo.TabIndex = 12;
             // 
-            // label1
+            // LabelTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(182, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(268, 37);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Simple Calculator";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.LabelTitle.AutoSize = true;
+            this.LabelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTitle.Location = new System.Drawing.Point(182, 5);
+            this.LabelTitle.Name = "LabelTitle";
+            this.LabelTitle.Size = new System.Drawing.Size(268, 37);
+            this.LabelTitle.TabIndex = 13;
+            this.LabelTitle.Text = "Simple Calculator";
             // 
             // PowerOf
             // 
@@ -195,7 +192,7 @@
             this.PowerOf.TabIndex = 14;
             this.PowerOf.Text = "Power";
             this.PowerOf.UseVisualStyleBackColor = true;
-            this.PowerOf.Click += new System.EventHandler(this.PowerOf_Click);
+            this.PowerOf.Click += new System.EventHandler(this.Power);
             // 
             // Average
             // 
@@ -206,7 +203,7 @@
             this.Average.TabIndex = 15;
             this.Average.Text = "Average";
             this.Average.UseVisualStyleBackColor = true;
-            this.Average.Click += new System.EventHandler(this.Average_Click);
+            this.Average.Click += new System.EventHandler(this.Averages);
             // 
             // Clear
             // 
@@ -217,7 +214,7 @@
             this.Clear.TabIndex = 16;
             this.Clear.Text = "Clear";
             this.Clear.UseVisualStyleBackColor = true;
-            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            this.Clear.Click += new System.EventHandler(this.ClearNumbers);
             // 
             // Calculator
             // 
@@ -228,12 +225,12 @@
             this.Controls.Add(this.Clear);
             this.Controls.Add(this.Average);
             this.Controls.Add(this.PowerOf);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.LabelTitle);
+            this.Controls.Add(this.LineTwo);
+            this.Controls.Add(this.LineOne);
             this.Controls.Add(this.ResultNumber);
-            this.Controls.Add(this.Number2);
-            this.Controls.Add(this.Number1);
+            this.Controls.Add(this.LabelNumberTwo);
+            this.Controls.Add(this.LabelNumberOne);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.Result);
             this.Controls.Add(this.Devision);
@@ -261,12 +258,12 @@
         private System.Windows.Forms.Button Devision;
         private System.Windows.Forms.Label Result;
         private System.Windows.Forms.Button Exit;
-        private System.Windows.Forms.Label Number1;
-        private System.Windows.Forms.Label Number2;
+        private System.Windows.Forms.Label LabelNumberOne;
+        private System.Windows.Forms.Label LabelNumberTwo;
         private System.Windows.Forms.Label ResultNumber;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel LineOne;
+        private System.Windows.Forms.Panel LineTwo;
+        private System.Windows.Forms.Label LabelTitle;
         private System.Windows.Forms.Button PowerOf;
         private System.Windows.Forms.Button Average;
         private System.Windows.Forms.Button Clear;

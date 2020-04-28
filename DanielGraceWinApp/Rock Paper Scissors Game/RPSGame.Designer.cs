@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.UserChoice = new System.Windows.Forms.GroupBox();
+            this.UserPicture = new System.Windows.Forms.PictureBox();
             this.Scissors = new System.Windows.Forms.RadioButton();
             this.Paper = new System.Windows.Forms.RadioButton();
             this.Rock = new System.Windows.Forms.RadioButton();
             this.ComputerChoice = new System.Windows.Forms.GroupBox();
             this.Play = new System.Windows.Forms.Button();
+            this.ComputerPicture = new System.Windows.Forms.PictureBox();
             this.Result = new System.Windows.Forms.GroupBox();
-            this.lblComputerScore = new System.Windows.Forms.Label();
-            this.lblUserScore = new System.Windows.Forms.Label();
+            this.TextComputerScore = new System.Windows.Forms.Label();
+            this.TextUserScore = new System.Windows.Forms.Label();
             this.LabelUserScore = new System.Windows.Forms.Label();
             this.LabelComputerScore = new System.Windows.Forms.Label();
             this.ResultText = new System.Windows.Forms.Label();
             this.Quit = new System.Windows.Forms.Button();
-            this.ComputerPicture = new System.Windows.Forms.PictureBox();
-            this.UserPicture = new System.Windows.Forms.PictureBox();
             this.UserChoice.SuspendLayout();
-            this.ComputerChoice.SuspendLayout();
-            this.Result.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ComputerPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserPicture)).BeginInit();
+            this.ComputerChoice.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComputerPicture)).BeginInit();
+            this.Result.SuspendLayout();
             this.SuspendLayout();
             // 
             // UserChoice
@@ -64,6 +64,15 @@
             this.UserChoice.TabStop = false;
             this.UserChoice.Text = "UserChoice";
             // 
+            // UserPicture
+            // 
+            this.UserPicture.Location = new System.Drawing.Point(15, 25);
+            this.UserPicture.Name = "UserPicture";
+            this.UserPicture.Size = new System.Drawing.Size(244, 213);
+            this.UserPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.UserPicture.TabIndex = 3;
+            this.UserPicture.TabStop = false;
+            // 
             // Scissors
             // 
             this.Scissors.AutoSize = true;
@@ -74,7 +83,7 @@
             this.Scissors.TabStop = true;
             this.Scissors.Text = "Scissors";
             this.Scissors.UseVisualStyleBackColor = true;
-            this.Scissors.CheckedChanged += new System.EventHandler(this.Scissors_CheckedChanged);
+            this.Scissors.CheckedChanged += new System.EventHandler(this.UserScissors);
             // 
             // Paper
             // 
@@ -86,7 +95,7 @@
             this.Paper.TabStop = true;
             this.Paper.Text = "Paper";
             this.Paper.UseVisualStyleBackColor = true;
-            this.Paper.CheckedChanged += new System.EventHandler(this.Paper_CheckedChanged);
+            this.Paper.CheckedChanged += new System.EventHandler(this.UserPaper);
             // 
             // Rock
             // 
@@ -98,7 +107,7 @@
             this.Rock.TabStop = true;
             this.Rock.Text = "Rock";
             this.Rock.UseVisualStyleBackColor = true;
-            this.Rock.CheckedChanged += new System.EventHandler(this.Rock_CheckedChanged);
+            this.Rock.CheckedChanged += new System.EventHandler(this.UserRock);
             // 
             // ComputerChoice
             // 
@@ -122,10 +131,19 @@
             this.Play.UseVisualStyleBackColor = true;
             this.Play.Click += new System.EventHandler(this.Play_Click);
             // 
+            // ComputerPicture
+            // 
+            this.ComputerPicture.Location = new System.Drawing.Point(26, 25);
+            this.ComputerPicture.Name = "ComputerPicture";
+            this.ComputerPicture.Size = new System.Drawing.Size(244, 213);
+            this.ComputerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.ComputerPicture.TabIndex = 4;
+            this.ComputerPicture.TabStop = false;
+            // 
             // Result
             // 
-            this.Result.Controls.Add(this.lblComputerScore);
-            this.Result.Controls.Add(this.lblUserScore);
+            this.Result.Controls.Add(this.TextComputerScore);
+            this.Result.Controls.Add(this.TextUserScore);
             this.Result.Controls.Add(this.LabelUserScore);
             this.Result.Controls.Add(this.LabelComputerScore);
             this.Result.Controls.Add(this.ResultText);
@@ -138,23 +156,23 @@
             this.Result.TabStop = false;
             this.Result.Text = "Result";
             // 
-            // lblComputerScore
+            // TextComputerScore
             // 
-            this.lblComputerScore.AutoSize = true;
-            this.lblComputerScore.Location = new System.Drawing.Point(87, 311);
-            this.lblComputerScore.Name = "lblComputerScore";
-            this.lblComputerScore.Size = new System.Drawing.Size(122, 20);
-            this.lblComputerScore.TabIndex = 9;
-            this.lblComputerScore.Text = "Computer score";
+            this.TextComputerScore.AutoSize = true;
+            this.TextComputerScore.Location = new System.Drawing.Point(87, 311);
+            this.TextComputerScore.Name = "TextComputerScore";
+            this.TextComputerScore.Size = new System.Drawing.Size(122, 20);
+            this.TextComputerScore.TabIndex = 9;
+            this.TextComputerScore.Text = "Computer score";
             // 
-            // lblUserScore
+            // TextUserScore
             // 
-            this.lblUserScore.AutoSize = true;
-            this.lblUserScore.Location = new System.Drawing.Point(108, 229);
-            this.lblUserScore.Name = "lblUserScore";
-            this.lblUserScore.Size = new System.Drawing.Size(86, 20);
-            this.lblUserScore.TabIndex = 8;
-            this.lblUserScore.Text = "User score";
+            this.TextUserScore.AutoSize = true;
+            this.TextUserScore.Location = new System.Drawing.Point(108, 229);
+            this.TextUserScore.Name = "TextUserScore";
+            this.TextUserScore.Size = new System.Drawing.Size(86, 20);
+            this.TextUserScore.TabIndex = 8;
+            this.TextUserScore.Text = "User score";
             // 
             // LabelUserScore
             // 
@@ -164,7 +182,7 @@
             this.LabelUserScore.Name = "LabelUserScore";
             this.LabelUserScore.Size = new System.Drawing.Size(0, 31);
             this.LabelUserScore.TabIndex = 7;
-            this.LabelUserScore.Click += new System.EventHandler(this.LabelUserScore_Click);
+            this.LabelUserScore.Click += new System.EventHandler(this.PlayerScore);
             // 
             // LabelComputerScore
             // 
@@ -174,7 +192,6 @@
             this.LabelComputerScore.Name = "LabelComputerScore";
             this.LabelComputerScore.Size = new System.Drawing.Size(0, 31);
             this.LabelComputerScore.TabIndex = 6;
-            this.LabelComputerScore.Click += new System.EventHandler(this.LabelComputerScore_Click);
             // 
             // ResultText
             // 
@@ -183,7 +200,6 @@
             this.ResultText.Name = "ResultText";
             this.ResultText.Size = new System.Drawing.Size(278, 379);
             this.ResultText.TabIndex = 5;
-            this.ResultText.Click += new System.EventHandler(this.LabelResult_Click);
             // 
             // Quit
             // 
@@ -193,27 +209,7 @@
             this.Quit.TabIndex = 4;
             this.Quit.Text = "Quit";
             this.Quit.UseVisualStyleBackColor = true;
-            this.Quit.Click += new System.EventHandler(this.Quit_Click);
-            // 
-            // ComputerPicture
-            // 
-            this.ComputerPicture.Location = new System.Drawing.Point(26, 25);
-            this.ComputerPicture.Name = "ComputerPicture";
-            this.ComputerPicture.Size = new System.Drawing.Size(244, 213);
-            this.ComputerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.ComputerPicture.TabIndex = 4;
-            this.ComputerPicture.TabStop = false;
-            this.ComputerPicture.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // UserPicture
-            // 
-            this.UserPicture.Location = new System.Drawing.Point(15, 25);
-            this.UserPicture.Name = "UserPicture";
-            this.UserPicture.Size = new System.Drawing.Size(244, 213);
-            this.UserPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.UserPicture.TabIndex = 3;
-            this.UserPicture.TabStop = false;
-            this.UserPicture.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.Quit.Click += new System.EventHandler(this.Exit);
             // 
             // RPSGame
             // 
@@ -230,12 +226,12 @@
             this.Load += new System.EventHandler(this.RPSGame_Load);
             this.UserChoice.ResumeLayout(false);
             this.UserChoice.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UserPicture)).EndInit();
             this.ComputerChoice.ResumeLayout(false);
             this.ComputerChoice.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ComputerPicture)).EndInit();
             this.Result.ResumeLayout(false);
             this.Result.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ComputerPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UserPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -253,8 +249,8 @@
         private System.Windows.Forms.GroupBox Result;
         private System.Windows.Forms.Label ResultText;
         private System.Windows.Forms.Button Quit;
-        private System.Windows.Forms.Label lblComputerScore;
-        private System.Windows.Forms.Label lblUserScore;
+        private System.Windows.Forms.Label TextComputerScore;
+        private System.Windows.Forms.Label TextUserScore;
         private System.Windows.Forms.Label LabelUserScore;
         private System.Windows.Forms.Label LabelComputerScore;
     }

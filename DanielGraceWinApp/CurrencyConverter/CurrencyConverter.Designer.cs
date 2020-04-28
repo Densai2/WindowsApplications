@@ -28,98 +28,108 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblUKPounds = new System.Windows.Forms.Label();
-            this.lblConvertedAmount = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioDollars = new System.Windows.Forms.RadioButton();
-            this.radioEuros = new System.Windows.Forms.RadioButton();
-            this.radioRupees = new System.Windows.Forms.RadioButton();
+            this.LabelTitle = new System.Windows.Forms.Label();
+            this.LabelPounds = new System.Windows.Forms.Label();
+            this.LabelCoverted = new System.Windows.Forms.Label();
+            this.GroupBox = new System.Windows.Forms.GroupBox();
+            this.Quit = new System.Windows.Forms.Button();
+            this.RadioRupees = new System.Windows.Forms.RadioButton();
+            this.RadioEuros = new System.Windows.Forms.RadioButton();
+            this.RadioDollars = new System.Windows.Forms.RadioButton();
             this.UKPounds = new System.Windows.Forms.TextBox();
             this.ConvertedAmount = new System.Windows.Forms.TextBox();
             this.Line = new System.Windows.Forms.Label();
-            this.Quit = new System.Windows.Forms.Button();
             this.EndAmount = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.GroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // lblTitle
+            // LabelTitle
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(106, 42);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(359, 46);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Currency converter";
+            this.LabelTitle.AutoSize = true;
+            this.LabelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelTitle.Location = new System.Drawing.Point(106, 42);
+            this.LabelTitle.Name = "LabelTitle";
+            this.LabelTitle.Size = new System.Drawing.Size(359, 46);
+            this.LabelTitle.TabIndex = 0;
+            this.LabelTitle.Text = "Currency converter";
             // 
-            // lblUKPounds
+            // LabelPounds
             // 
-            this.lblUKPounds.AutoSize = true;
-            this.lblUKPounds.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUKPounds.Location = new System.Drawing.Point(140, 159);
-            this.lblUKPounds.Name = "lblUKPounds";
-            this.lblUKPounds.Size = new System.Drawing.Size(112, 25);
-            this.lblUKPounds.TabIndex = 1;
-            this.lblUKPounds.Text = "UK Pounds";
+            this.LabelPounds.AutoSize = true;
+            this.LabelPounds.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPounds.Location = new System.Drawing.Point(140, 159);
+            this.LabelPounds.Name = "LabelPounds";
+            this.LabelPounds.Size = new System.Drawing.Size(112, 25);
+            this.LabelPounds.TabIndex = 1;
+            this.LabelPounds.Text = "UK Pounds";
             // 
-            // lblConvertedAmount
+            // LabelCoverted
             // 
-            this.lblConvertedAmount.AutoSize = true;
-            this.lblConvertedAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConvertedAmount.Location = new System.Drawing.Point(140, 247);
-            this.lblConvertedAmount.Name = "lblConvertedAmount";
-            this.lblConvertedAmount.Size = new System.Drawing.Size(173, 25);
-            this.lblConvertedAmount.TabIndex = 2;
-            this.lblConvertedAmount.Text = "Converted amount";
+            this.LabelCoverted.AutoSize = true;
+            this.LabelCoverted.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelCoverted.Location = new System.Drawing.Point(140, 247);
+            this.LabelCoverted.Name = "LabelCoverted";
+            this.LabelCoverted.Size = new System.Drawing.Size(173, 25);
+            this.LabelCoverted.TabIndex = 2;
+            this.LabelCoverted.Text = "Converted amount";
             // 
-            // groupBox1
+            // GroupBox
             // 
-            this.groupBox1.Controls.Add(this.Quit);
-            this.groupBox1.Controls.Add(this.radioRupees);
-            this.groupBox1.Controls.Add(this.radioEuros);
-            this.groupBox1.Controls.Add(this.radioDollars);
-            this.groupBox1.Location = new System.Drawing.Point(532, 88);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(206, 318);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
+            this.GroupBox.Controls.Add(this.Quit);
+            this.GroupBox.Controls.Add(this.RadioRupees);
+            this.GroupBox.Controls.Add(this.RadioEuros);
+            this.GroupBox.Controls.Add(this.RadioDollars);
+            this.GroupBox.Location = new System.Drawing.Point(532, 88);
+            this.GroupBox.Name = "GroupBox";
+            this.GroupBox.Size = new System.Drawing.Size(206, 318);
+            this.GroupBox.TabIndex = 3;
+            this.GroupBox.TabStop = false;
             // 
-            // radioDollars
+            // Quit
             // 
-            this.radioDollars.AutoSize = true;
-            this.radioDollars.Location = new System.Drawing.Point(70, 41);
-            this.radioDollars.Name = "radioDollars";
-            this.radioDollars.Size = new System.Drawing.Size(57, 17);
-            this.radioDollars.TabIndex = 0;
-            this.radioDollars.TabStop = true;
-            this.radioDollars.Text = "Dollars";
-            this.radioDollars.UseVisualStyleBackColor = true;
-            this.radioDollars.CheckedChanged += new System.EventHandler(this.radioDollars_CheckedChanged);
+            this.Quit.Location = new System.Drawing.Point(70, 227);
+            this.Quit.Name = "Quit";
+            this.Quit.Size = new System.Drawing.Size(75, 23);
+            this.Quit.TabIndex = 3;
+            this.Quit.Text = "Quit";
+            this.Quit.UseVisualStyleBackColor = true;
+            this.Quit.Click += new System.EventHandler(this.Confirmation);
             // 
-            // radioEuros
+            // RadioRupees
             // 
-            this.radioEuros.AutoSize = true;
-            this.radioEuros.Location = new System.Drawing.Point(70, 97);
-            this.radioEuros.Name = "radioEuros";
-            this.radioEuros.Size = new System.Drawing.Size(52, 17);
-            this.radioEuros.TabIndex = 1;
-            this.radioEuros.TabStop = true;
-            this.radioEuros.Text = "Euros";
-            this.radioEuros.UseVisualStyleBackColor = true;
-            this.radioEuros.CheckedChanged += new System.EventHandler(this.radioEuros_CheckedChanged);
+            this.RadioRupees.AutoSize = true;
+            this.RadioRupees.Location = new System.Drawing.Point(70, 159);
+            this.RadioRupees.Name = "RadioRupees";
+            this.RadioRupees.Size = new System.Drawing.Size(62, 17);
+            this.RadioRupees.TabIndex = 2;
+            this.RadioRupees.TabStop = true;
+            this.RadioRupees.Text = "Rupees";
+            this.RadioRupees.UseVisualStyleBackColor = true;
+            this.RadioRupees.CheckedChanged += new System.EventHandler(this.Ruppes);
             // 
-            // radioRupees
+            // RadioEuros
             // 
-            this.radioRupees.AutoSize = true;
-            this.radioRupees.Location = new System.Drawing.Point(70, 159);
-            this.radioRupees.Name = "radioRupees";
-            this.radioRupees.Size = new System.Drawing.Size(62, 17);
-            this.radioRupees.TabIndex = 2;
-            this.radioRupees.TabStop = true;
-            this.radioRupees.Text = "Rupees";
-            this.radioRupees.UseVisualStyleBackColor = true;
-            this.radioRupees.CheckedChanged += new System.EventHandler(this.radioRupees_CheckedChanged);
+            this.RadioEuros.AutoSize = true;
+            this.RadioEuros.Location = new System.Drawing.Point(70, 97);
+            this.RadioEuros.Name = "RadioEuros";
+            this.RadioEuros.Size = new System.Drawing.Size(52, 17);
+            this.RadioEuros.TabIndex = 1;
+            this.RadioEuros.TabStop = true;
+            this.RadioEuros.Text = "Euros";
+            this.RadioEuros.UseVisualStyleBackColor = true;
+            this.RadioEuros.CheckedChanged += new System.EventHandler(this.Euros);
+            // 
+            // RadioDollars
+            // 
+            this.RadioDollars.AutoSize = true;
+            this.RadioDollars.Location = new System.Drawing.Point(70, 41);
+            this.RadioDollars.Name = "RadioDollars";
+            this.RadioDollars.Size = new System.Drawing.Size(57, 17);
+            this.RadioDollars.TabIndex = 0;
+            this.RadioDollars.TabStop = true;
+            this.RadioDollars.Text = "Dollars";
+            this.RadioDollars.UseVisualStyleBackColor = true;
+            this.RadioDollars.CheckedChanged += new System.EventHandler(this.Dolars);
             // 
             // UKPounds
             // 
@@ -128,7 +138,6 @@
             this.UKPounds.Size = new System.Drawing.Size(150, 20);
             this.UKPounds.TabIndex = 4;
             this.UKPounds.Text = "0";
-            this.UKPounds.TextChanged += new System.EventHandler(this.UKPounds_TextChanged);
             // 
             // ConvertedAmount
             // 
@@ -136,7 +145,6 @@
             this.ConvertedAmount.Name = "ConvertedAmount";
             this.ConvertedAmount.Size = new System.Drawing.Size(150, 20);
             this.ConvertedAmount.TabIndex = 5;
-            this.ConvertedAmount.TextChanged += new System.EventHandler(this.ConvertedAmount_TextChanged);
             // 
             // Line
             // 
@@ -148,16 +156,6 @@
             this.Line.TabIndex = 6;
             this.Line.Text = "                                                                                 " +
     "";
-            // 
-            // Quit
-            // 
-            this.Quit.Location = new System.Drawing.Point(70, 227);
-            this.Quit.Name = "Quit";
-            this.Quit.Size = new System.Drawing.Size(75, 23);
-            this.Quit.TabIndex = 3;
-            this.Quit.Text = "Quit";
-            this.Quit.UseVisualStyleBackColor = true;
-            this.Quit.Click += new System.EventHandler(this.button1_Click);
             // 
             // EndAmount
             // 
@@ -176,15 +174,14 @@
             this.Controls.Add(this.Line);
             this.Controls.Add(this.ConvertedAmount);
             this.Controls.Add(this.UKPounds);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lblConvertedAmount);
-            this.Controls.Add(this.lblUKPounds);
-            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.GroupBox);
+            this.Controls.Add(this.LabelCoverted);
+            this.Controls.Add(this.LabelPounds);
+            this.Controls.Add(this.LabelTitle);
             this.Name = "CurrencyConverter";
             this.Text = "Convert pounds to foreign currency";
-            this.Load += new System.EventHandler(this.CurrencyConverter_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.GroupBox.ResumeLayout(false);
+            this.GroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,14 +189,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblUKPounds;
-        private System.Windows.Forms.Label lblConvertedAmount;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label LabelTitle;
+        private System.Windows.Forms.Label LabelPounds;
+        private System.Windows.Forms.Label LabelCoverted;
+        private System.Windows.Forms.GroupBox GroupBox;
         private System.Windows.Forms.Button Quit;
-        private System.Windows.Forms.RadioButton radioRupees;
-        private System.Windows.Forms.RadioButton radioEuros;
-        private System.Windows.Forms.RadioButton radioDollars;
+        private System.Windows.Forms.RadioButton RadioRupees;
+        private System.Windows.Forms.RadioButton RadioEuros;
+        private System.Windows.Forms.RadioButton RadioDollars;
         private System.Windows.Forms.TextBox UKPounds;
         private System.Windows.Forms.TextBox ConvertedAmount;
         private System.Windows.Forms.Label Line;

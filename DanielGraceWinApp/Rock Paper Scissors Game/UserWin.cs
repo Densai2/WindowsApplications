@@ -12,27 +12,27 @@ namespace DanielGraceWinApp
 {
     public partial class UserWin : Form
     {
+        /// <summary>
+        /// If the user wins, they are taken
+        /// to this screen, clicking exits.
+        /// </summary>
+  
         public UserWin()
         {
             InitializeComponent();
         }
 
-        private void UserWin_Load(object sender, EventArgs e)
-        {
-       
-        }
-
-        private void UserWin_Click(object sender, EventArgs e)
+        private void UserWon(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void YouWin(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void HappyFace(object sender, EventArgs e)
         {
             Close();
         }

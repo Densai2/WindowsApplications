@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace DanielGraceWinApp
 {
+    /// <summary>
+    /// This form is to take the user's UK pounds
+    /// and then convert them into their desired currency:
+    /// Dolars, euros or ruppes
+    /// </summary>
     public partial class CurrencyConverter : Form
     {
         public CurrencyConverter()
@@ -17,12 +22,7 @@ namespace DanielGraceWinApp
             InitializeComponent();
         }
 
-        private void CurrencyConverter_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void Confirmation(object sender, EventArgs e)
         {
             DialogResult resultMessage = MessageBox.Show("Are you sure?", "Confirmation", MessageBoxButtons.YesNo);
             if (resultMessage == DialogResult.Yes)
@@ -36,7 +36,7 @@ namespace DanielGraceWinApp
             }
         }
 
-        private void radioDollars_CheckedChanged(object sender, EventArgs e)
+        private void Dolars(object sender, EventArgs e)
         {
             double amount;
             amount = Convert.ToDouble(UKPounds.Text) * 1.8;
@@ -44,24 +44,15 @@ namespace DanielGraceWinApp
 
         }
 
-        private void ConvertedAmount_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void UKPounds_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioEuros_CheckedChanged(object sender, EventArgs e)
+        private void Euros(object sender, EventArgs e)
         {
             double amount;
             amount = Convert.ToDouble(UKPounds.Text) * 1.4;
             EndAmount.Text = amount.ToString() + " Euros";
         }
 
-        private void radioRupees_CheckedChanged(object sender, EventArgs e)
+        private void Ruppes(object sender, EventArgs e)
         {
             double amount;
             amount = Convert.ToDouble(UKPounds.Text) * 80;

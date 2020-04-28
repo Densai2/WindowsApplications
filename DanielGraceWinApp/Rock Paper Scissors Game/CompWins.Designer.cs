@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.YouLost = new System.Windows.Forms.Label();
+            this.Crying = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Crying)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // YouLost
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Plum;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Purple;
-            this.label1.Location = new System.Drawing.Point(356, 117);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "You Lost...";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.YouLost.AutoSize = true;
+            this.YouLost.BackColor = System.Drawing.Color.Plum;
+            this.YouLost.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YouLost.ForeColor = System.Drawing.Color.Purple;
+            this.YouLost.Location = new System.Drawing.Point(356, 117);
+            this.YouLost.Name = "YouLost";
+            this.YouLost.Size = new System.Drawing.Size(211, 46);
+            this.YouLost.TabIndex = 0;
+            this.YouLost.Text = "You Lost...";
+            this.YouLost.Click += new System.EventHandler(this.UserLoss);
             // 
-            // pictureBox1
+            // Crying
             // 
-            this.pictureBox1.BackgroundImage = global::DanielGraceWinApp.Properties.Resources._5897a8c3cba9841eabab6156;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(324, 202);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(268, 260);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.Crying.BackgroundImage = global::DanielGraceWinApp.Properties.Resources._5897a8c3cba9841eabab6156;
+            this.Crying.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Crying.Location = new System.Drawing.Point(324, 202);
+            this.Crying.Name = "Crying";
+            this.Crying.Size = new System.Drawing.Size(268, 260);
+            this.Crying.TabIndex = 1;
+            this.Crying.TabStop = false;
+            this.Crying.Click += new System.EventHandler(this.SadFace);
             // 
             // CompWins
             // 
@@ -63,14 +63,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(939, 619);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Crying);
+            this.Controls.Add(this.YouLost);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CompWins";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CompWins";
-            this.Click += new System.EventHandler(this.CompWins_Click);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Click += new System.EventHandler(this.ComputerWins);
+            ((System.ComponentModel.ISupportInitialize)(this.Crying)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,7 +78,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label YouLost;
+        private System.Windows.Forms.PictureBox Crying;
     }
 }

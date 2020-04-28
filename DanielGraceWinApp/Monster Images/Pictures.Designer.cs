@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CboChoice = new System.Windows.Forms.ComboBox();
+            this.UserChoice = new System.Windows.Forms.ComboBox();
             this.PictureChoice = new System.Windows.Forms.PictureBox();
             this.Quit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PictureChoice)).BeginInit();
             this.SuspendLayout();
             // 
-            // CboChoice
+            // UserChoice
             // 
-            this.CboChoice.FormattingEnabled = true;
-            this.CboChoice.Items.AddRange(new object[] {
+            this.UserChoice.FormattingEnabled = true;
+            this.UserChoice.Items.AddRange(new object[] {
             "Alien",
             "Banshee",
             "Godzilla",
             "Mike",
             "Sid",
             "Zombie"});
-            this.CboChoice.Location = new System.Drawing.Point(75, 110);
-            this.CboChoice.Name = "CboChoice";
-            this.CboChoice.Size = new System.Drawing.Size(129, 21);
-            this.CboChoice.TabIndex = 0;
-            this.CboChoice.Text = "Choose your monster!";
-            this.CboChoice.SelectedIndexChanged += new System.EventHandler(this.CboChoice_SelectedIndexChanged);
+            this.UserChoice.Location = new System.Drawing.Point(75, 110);
+            this.UserChoice.Name = "UserChoice";
+            this.UserChoice.Size = new System.Drawing.Size(129, 21);
+            this.UserChoice.TabIndex = 0;
+            this.UserChoice.Text = "Choose your monster!";
+            this.UserChoice.SelectedIndexChanged += new System.EventHandler(this.MonsterSelected);
             // 
             // PictureChoice
             // 
@@ -68,7 +68,7 @@
             this.Quit.TabIndex = 2;
             this.Quit.Text = "Quit";
             this.Quit.UseVisualStyleBackColor = true;
-            this.Quit.Click += new System.EventHandler(this.Quit_Click);
+            this.Quit.Click += new System.EventHandler(this.Exit);
             // 
             // Pictures
             // 
@@ -77,7 +77,7 @@
             this.ClientSize = new System.Drawing.Size(616, 282);
             this.Controls.Add(this.Quit);
             this.Controls.Add(this.PictureChoice);
-            this.Controls.Add(this.CboChoice);
+            this.Controls.Add(this.UserChoice);
             this.Name = "Pictures";
             this.Text = "Pictures";
             ((System.ComponentModel.ISupportInitialize)(this.PictureChoice)).EndInit();
@@ -87,7 +87,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox CboChoice;
+        private System.Windows.Forms.ComboBox UserChoice;
         private System.Windows.Forms.PictureBox PictureChoice;
         private System.Windows.Forms.Button Quit;
     }

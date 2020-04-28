@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DanielGraceWinApp.Tipster
@@ -31,22 +24,13 @@ namespace DanielGraceWinApp.Tipster
 
         }
 
-        private void Tipster_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Quit_Click(object sender, EventArgs e)
+        private void Close(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void NumberPeople_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void NormalTip(object sender, EventArgs e)
         {
             Convert.ToDouble(Bill.Text);
             double newtotal, billnum;
@@ -56,12 +40,7 @@ namespace DanielGraceWinApp.Tipster
             Bill.Text = newtotal.ToString();
         }
 
-        private void RadioNone_CheckedChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void RadioGenerous_CheckedChanged(object sender, EventArgs e)
+        private void GenerousTip(object sender, EventArgs e)
         {
             Convert.ToDouble(Bill.Text);
             double newtotal, billnum;
@@ -71,7 +50,7 @@ namespace DanielGraceWinApp.Tipster
             Bill.Text = newtotal.ToString();
         }
 
-        private void RadioMad_CheckedChanged(object sender, EventArgs e)
+        private void MadTip(object sender, EventArgs e)
         {
             Convert.ToDouble(Bill.Text);
             double newtotal, billnum;

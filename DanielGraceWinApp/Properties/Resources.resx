@@ -118,71 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="unnamed (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rain1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="monkey-png-transparent-images-png-only-61" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\monkey-png-transparent-images-png-only-61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="confused-emoji-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\confused-emoji-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="monkey-png-transparent-images-png-only-6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\monkey-png-transparent-images-png-only-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="plus-256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus-256x256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="5897a8c3cba9841eabab6156" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5897a8c3cba9841eabab6156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1200px-Target_Corporation_logo_(vector)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1200px-Target_Corporation_logo_(vector).svg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plus-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bb51ff63faf867d645328761f4197f74_free-restaurant-cliparts-free-download-clip-art-webcomicmsnet_840-592" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bb51ff63faf867d645328761f4197f74_free-restaurant-cliparts-free-download-clip-art-webcomicmsnet_840-592.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thumbs_Up_Sign_Emoji_Icon_ios10_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thumbs_Up_Sign_Emoji_Icon_ios10_large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unnamed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2a0e4aedfe11ec30c9fc5b6f20567479" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2a0e4aedfe11ec30c9fc5b6f20567479.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="87b36abed58b3295ff678aae11e3fb66" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\87b36abed58b3295ff678aae11e3fb66.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Scissors" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Scissors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Thumbs_Up_Sign_Emoji_Icon_ios10_large1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Thumbs_Up_Sign_Emoji_Icon_ios10_large1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Volcanic-twilight-Mt-Pinatubo_Crepuscular-Bob-Harrington" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Volcanic-twilight-Mt-Pinatubo_Crepuscular-Bob-Harrington.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1200px-Target_Corporation_logo_(vector).svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1200px-Target_Corporation_logo_(vector).svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,13 +130,79 @@
   <data name="plus-5121" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plus-5121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="monkey-png-transparent-images-png-only-6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monkey-png-transparent-images-png-only-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="plus-256x256" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plus-256x256.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Scissors" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scissors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="87b36abed58b3295ff678aae11e3fb66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\87b36abed58b3295ff678aae11e3fb66.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="table-chair-dining-room-furniture-neat-table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\table-chair-dining-room-furniture-neat-table.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sainsburys-louise-bolton-car-damage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sainsburys-louise-bolton-car-damage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bb51ff63faf867d645328761f4197f74_free-restaurant-cliparts-free-download-clip-art-webcomicmsnet_840-592" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bb51ff63faf867d645328761f4197f74_free-restaurant-cliparts-free-download-clip-art-webcomicmsnet_840-592.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thumbs_Up_Sign_Emoji_Icon_ios10_large1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thumbs_Up_Sign_Emoji_Icon_ios10_large1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volcanic-twilight-Mt-Pinatubo_Crepuscular-Bob-Harrington" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volcanic-twilight-Mt-Pinatubo_Crepuscular-Bob-Harrington.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Thumbs_Up_Sign_Emoji_Icon_ios10_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thumbs_Up_Sign_Emoji_Icon_ios10_large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2a0e4aedfe11ec30c9fc5b6f20567479" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2a0e4aedfe11ec30c9fc5b6f20567479.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1200px-Target_Corporation_logo_(vector)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1200px-Target_Corporation_logo_(vector).svg1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rain1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rain1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monkey-png-transparent-images-png-only-61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monkey-png-transparent-images-png-only-61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\face-with-tears-of-joy-emoji-emoticon-crying-smiley-cry2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="confused-emoji-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\confused-emoji-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="375-3751752_dining-table-clipart-elegant-dining-dinner-table-clipart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\375-3751752_dining-table-clipart-elegant-dining-dinner-table-clipart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace DanielGraceWinApp
 {
+    /// <summary>
+    /// This app gives the user different options
+    /// and displays the total cost when selected.
+    /// </summary>
     public partial class PoshNosh : Form
     {
         double maincoursecost, dessertcost, startercost, totalcost;
@@ -18,19 +22,15 @@ namespace DanielGraceWinApp
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void Exit_Click(object sender, EventArgs e)
+        private void Close(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void lstDessert_SelectedIndexChanged(object sender, EventArgs e)
+        private void DessertChoice(object sender, EventArgs e)
         {
-            switch (lstDessert.Text)
+            switch (Deserts.Text)
             {
                 case "Chocolate Fudge": dessertcost = 6.63; break;
                 case "Custard": dessertcost = 13.00; break;
@@ -41,14 +41,9 @@ namespace DanielGraceWinApp
             FinalCost.Text = "£ " + totalcost.ToString("0.00");
         }
 
-        private void FinalCost_Click(object sender, EventArgs e)
+        private void StarterChoice(object sender, EventArgs e)
         {
-            
-        }
-
-        private void lstStarter_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            switch (lstStarter.Text)
+            switch (Starters.Text)
             {
                 case "Dough Balls": startercost = 6.25; break;
                 case "Garlic Bread": startercost = 7.00; break;
@@ -59,9 +54,9 @@ namespace DanielGraceWinApp
             FinalCost.Text = "£ " + totalcost.ToString("0.00");
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void MainChoice(object sender, EventArgs e)
         {
-            switch (lstMain.Text)
+            switch (Mains.Text)
             {
                 case "Steak and Chips": maincoursecost = 12.50; break;
                 case "Fish and Chips": maincoursecost = 7.50; break;

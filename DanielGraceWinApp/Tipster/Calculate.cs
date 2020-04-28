@@ -14,12 +14,17 @@ namespace DanielGraceWinApp.Tipster
     
     public partial class Calculate : Form
     {
+        /// <summary>
+        /// Calculate takes the information from
+        /// Tipster and displays the results of the 
+        /// tip.
+        /// </summary>
         public Calculate()
         {
             InitializeComponent();
         }
 
-        private void Calculate_Load(object sender, EventArgs e)
+        private void Calculation(object sender, EventArgs e)
         {
             double n1, n2, answer;
 
@@ -37,7 +42,7 @@ namespace DanielGraceWinApp.Tipster
 
         }
 
-        private void Close_Click(object sender, EventArgs e)
+        private void Quit(object sender, EventArgs e)
         {
             Close();
         }

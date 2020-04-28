@@ -9,8 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DanielGraceWinApp;
 
+
 namespace Calculation
 {
+    /// <summary>
+    /// This form is a calcuator and allows the user to 
+    /// add, subtract, divide, mulitply and average
+    /// any numbers they put in.
+    /// </summary>
     public partial class Calculator : Form
     {
         public Calculator()
@@ -18,7 +24,7 @@ namespace Calculation
             InitializeComponent();
         }
 
-        private void Exit_Click(object sender, EventArgs e)
+        private void ExitButton(object sender, EventArgs e)
         {
             CalculatorEndScreen calculatorEnd = new CalculatorEndScreen();
             calculatorEnd.ShowDialog();
@@ -26,12 +32,7 @@ namespace Calculation
             Application.Exit();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Add_Click(object sender, EventArgs e)
+        private void Addition(object sender, EventArgs e)
         {
             Double number1, number2, answer;
             number1 = Convert.ToDouble(FirstNumber.Text);
@@ -40,17 +41,7 @@ namespace Calculation
             ResultNumber.Text = answer.ToString(); 
         }
 
-        private void FirstNumber_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SecondNumber_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Subtract_Click(object sender, EventArgs e)
+        private void Subtraction(object sender, EventArgs e)
         {
             Double number1, number2, answer;
             number1 = Convert.ToDouble(FirstNumber.Text);
@@ -59,7 +50,7 @@ namespace Calculation
             ResultNumber.Text = answer.ToString();
         }
 
-        private void Muliply_Click(object sender, EventArgs e)
+        private void Multiplication(object sender, EventArgs e)
         {
             Double number1, number2, answer;
             number1 = Convert.ToDouble(FirstNumber.Text);
@@ -68,7 +59,7 @@ namespace Calculation
             ResultNumber.Text = answer.ToString();
         }
 
-        private void Devision_Click(object sender, EventArgs e)
+        private void Divide(object sender, EventArgs e)
         {
             Double number1, number2, answer;
             number1 = Convert.ToDouble(FirstNumber.Text);
@@ -91,7 +82,7 @@ namespace Calculation
             splashcalculator.Close();
         }
 
-        private void PowerOf_Click(object sender, EventArgs e)
+        private void Power(object sender, EventArgs e)
         {
             Double number1, number2, answer;
             number1 = Convert.ToDouble(FirstNumber.Text);
@@ -100,7 +91,7 @@ namespace Calculation
             ResultNumber.Text = answer.ToString();
         }
 
-        private void Average_Click(object sender, EventArgs e)
+        private void Averages(object sender, EventArgs e)
         {
             Double number1, number2, answer;
             number1 = Convert.ToDouble(FirstNumber.Text);
@@ -109,7 +100,7 @@ namespace Calculation
             ResultNumber.Text = answer.ToString();
         }
 
-        private void Clear_Click(object sender, EventArgs e)
+        private void ClearNumbers(object sender, EventArgs e)
         {
             FirstNumber.Text = "";
             SecondNumber.Text = "";

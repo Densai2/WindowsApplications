@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace DataEntryForm
 {
+    /// <summary>
+    /// This app allows the buttons to be interactive with
+    /// the user, allowing them to change when clicked.
+    /// </summary>
     public partial class LabelControls : Form
     {
         public LabelControls()
@@ -17,14 +21,9 @@ namespace DataEntryForm
             InitializeComponent();
         }
 
-        private void Quit_Click(object sender, EventArgs e)
+        private void Exit(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void ButtonShow1_Click(object sender, EventArgs e)
-        {
-  
         }
 
         private void BestComputerText(object sender, EventArgs e)
@@ -35,21 +34,6 @@ namespace DataEntryForm
         private void BestSoftware(object sender, EventArgs e)
         {
             SoftwareText.Text = "Stunning software, great compatability! \n Selling for £246!";
-        }
-
-        private void BragText(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Greeting_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LabelControls_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

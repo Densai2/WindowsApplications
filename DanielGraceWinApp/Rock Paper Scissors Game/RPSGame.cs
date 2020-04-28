@@ -10,6 +10,13 @@ using System.Windows.Forms;
 
 namespace DanielGraceWinApp
 {
+    /// <summary>
+    /// This is a rock, paper, scissors game. 
+    /// The user and the computer will choose
+    /// an option which is then displayed on 
+    /// the screen, along with the result.
+    /// Additionally,
+    /// </summary>
     public partial class RPSGame : Form
     {
         int computerChoice, userChoice;
@@ -21,15 +28,10 @@ namespace DanielGraceWinApp
             InitializeComponent();
         }
 
-        private void Rock_CheckedChanged(object sender, EventArgs e)
+        private void UserRock(object sender, EventArgs e)
         {
             UserPicture.Image = Image.FromFile("Rock.png");
             userChoice = 1;
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-         
         }
 
         private void RPSGame_Load(object sender, EventArgs e)
@@ -38,21 +40,16 @@ namespace DanielGraceWinApp
             rPSGameOpenSplash.ShowDialog();
         }
 
-        private void Paper_CheckedChanged(object sender, EventArgs e)
+        private void UserPaper(object sender, EventArgs e)
         {
             UserPicture.Image = Image.FromFile("Paper.png");
             userChoice = 2;
         }
 
-        private void Scissors_CheckedChanged(object sender, EventArgs e)
+        private void UserScissors(object sender, EventArgs e)
         {
             UserPicture.Image = Image.FromFile("Scissors.png");
             userChoice = 3;
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Play_Click(object sender, EventArgs e)
@@ -81,25 +78,14 @@ namespace DanielGraceWinApp
             CheckResult();
         }
 
-
-        private void LabelResult_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Quit_Click(object sender, EventArgs e)
+        private void Exit(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void LabelUserScore_Click(object sender, EventArgs e)
+        private void PlayerScore(object sender, EventArgs e)
         {
             playerScore.ToString();
-        }
-
-        private void LabelComputerScore_Click(object sender, EventArgs e)
-        {
-
         }
 
         public void UserWins()
@@ -110,10 +96,10 @@ namespace DanielGraceWinApp
             LabelUserScore.ForeColor = Color.Orange;
             LabelComputerScore.BackColor = Color.Aqua;
             LabelComputerScore.ForeColor = Color.Orange;
-            lblUserScore.BackColor = Color.Aqua;
-            lblUserScore.ForeColor = Color.Orange;
-            lblComputerScore.BackColor = Color.Aqua;
-            lblComputerScore.ForeColor = Color.Orange;
+            TextUserScore.BackColor = Color.Aqua;
+            TextUserScore.ForeColor = Color.Orange;
+            TextComputerScore.BackColor = Color.Aqua;
+            TextComputerScore.ForeColor = Color.Orange;
         }
         public void CheckResult()
         {
@@ -193,10 +179,10 @@ namespace DanielGraceWinApp
                 LabelUserScore.ForeColor = Color.Black;
                 LabelComputerScore.BackColor = Color.Purple;
                 LabelComputerScore.ForeColor = Color.Black;
-                lblUserScore.BackColor = Color.Purple;
-                lblUserScore.ForeColor = Color.Black;
-                lblComputerScore.BackColor = Color.Purple;
-                lblComputerScore.ForeColor = Color.Black;
+                TextUserScore.BackColor = Color.Purple;
+                TextUserScore.ForeColor = Color.Black;
+                TextComputerScore.BackColor = Color.Purple;
+                TextComputerScore.ForeColor = Color.Black;
             }
             
     }

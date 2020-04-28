@@ -93,6 +93,16 @@ namespace DanielGraceWinApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _375_3751752_dining_table_clipart_elegant_dining_dinner_table_clipart {
+            get {
+                object obj = ResourceManager.GetObject("375-3751752_dining-table-clipart-elegant-dining-dinner-table-clipart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _5897a8c3cba9841eabab6156 {
             get {
                 object obj = ResourceManager.GetObject("5897a8c3cba9841eabab6156", resourceCulture);
@@ -267,6 +277,16 @@ namespace DanielGraceWinApp.Properties {
         internal static System.Drawing.Bitmap Scissors {
             get {
                 object obj = ResourceManager.GetObject("Scissors", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap table_chair_dining_room_furniture_neat_table {
+            get {
+                object obj = ResourceManager.GetObject("table-chair-dining-room-furniture-neat-table", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -30,18 +30,18 @@
         {
             this.Bill = new System.Windows.Forms.TextBox();
             this.NumberPeople = new System.Windows.Forms.ListBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Calculate = new System.Windows.Forms.Button();
             this.Quit = new System.Windows.Forms.Button();
             this.LabelBill = new System.Windows.Forms.Label();
             this.LabelPeople = new System.Windows.Forms.Label();
             this.GroupTip = new System.Windows.Forms.GroupBox();
-            this.RadioNone = new System.Windows.Forms.RadioButton();
-            this.RadioNormal = new System.Windows.Forms.RadioButton();
-            this.RadioGenerous = new System.Windows.Forms.RadioButton();
             this.RadioMad = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.RadioGenerous = new System.Windows.Forms.RadioButton();
+            this.RadioNormal = new System.Windows.Forms.RadioButton();
+            this.RadioNone = new System.Windows.Forms.RadioButton();
+            this.PictureBox = new System.Windows.Forms.PictureBox();
             this.GroupTip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // Bill
@@ -70,19 +70,10 @@
             this.NumberPeople.Name = "NumberPeople";
             this.NumberPeople.Size = new System.Drawing.Size(120, 95);
             this.NumberPeople.TabIndex = 1;
-            this.NumberPeople.SelectedIndexChanged += new System.EventHandler(this.NumberPeople_SelectedIndexChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(440, 65);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(296, 270);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // Calculate
             // 
-            this.Calculate.Location = new System.Drawing.Point(498, 365);
+            this.Calculate.Location = new System.Drawing.Point(475, 365);
             this.Calculate.Name = "Calculate";
             this.Calculate.Size = new System.Drawing.Size(75, 23);
             this.Calculate.TabIndex = 3;
@@ -92,13 +83,13 @@
             // 
             // Quit
             // 
-            this.Quit.Location = new System.Drawing.Point(633, 365);
+            this.Quit.Location = new System.Drawing.Point(575, 365);
             this.Quit.Name = "Quit";
             this.Quit.Size = new System.Drawing.Size(75, 23);
             this.Quit.TabIndex = 4;
             this.Quit.Text = "Quit";
             this.Quit.UseVisualStyleBackColor = true;
-            this.Quit.Click += new System.EventHandler(this.Quit_Click);
+            this.Quit.Click += new System.EventHandler(this.Close);
             // 
             // LabelBill
             // 
@@ -133,29 +124,17 @@
             this.GroupTip.TabStop = false;
             this.GroupTip.Text = "Tip";
             // 
-            // RadioNone
+            // RadioMad
             // 
-            this.RadioNone.AutoSize = true;
-            this.RadioNone.Location = new System.Drawing.Point(61, 19);
-            this.RadioNone.Name = "RadioNone";
-            this.RadioNone.Size = new System.Drawing.Size(51, 17);
-            this.RadioNone.TabIndex = 0;
-            this.RadioNone.TabStop = true;
-            this.RadioNone.Text = "None";
-            this.RadioNone.UseVisualStyleBackColor = true;
-            this.RadioNone.CheckedChanged += new System.EventHandler(this.RadioNone_CheckedChanged);
-            // 
-            // RadioNormal
-            // 
-            this.RadioNormal.AutoSize = true;
-            this.RadioNormal.Location = new System.Drawing.Point(174, 19);
-            this.RadioNormal.Name = "RadioNormal";
-            this.RadioNormal.Size = new System.Drawing.Size(58, 17);
-            this.RadioNormal.TabIndex = 1;
-            this.RadioNormal.TabStop = true;
-            this.RadioNormal.Text = "Normal";
-            this.RadioNormal.UseVisualStyleBackColor = true;
-            this.RadioNormal.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.RadioMad.AutoSize = true;
+            this.RadioMad.Location = new System.Drawing.Point(174, 71);
+            this.RadioMad.Name = "RadioMad";
+            this.RadioMad.Size = new System.Drawing.Size(46, 17);
+            this.RadioMad.TabIndex = 3;
+            this.RadioMad.TabStop = true;
+            this.RadioMad.Text = "Mad";
+            this.RadioMad.UseVisualStyleBackColor = true;
+            this.RadioMad.CheckedChanged += new System.EventHandler(this.MadTip);
             // 
             // RadioGenerous
             // 
@@ -167,19 +146,40 @@
             this.RadioGenerous.TabStop = true;
             this.RadioGenerous.Text = "Generous";
             this.RadioGenerous.UseVisualStyleBackColor = true;
-            this.RadioGenerous.CheckedChanged += new System.EventHandler(this.RadioGenerous_CheckedChanged);
+            this.RadioGenerous.CheckedChanged += new System.EventHandler(this.GenerousTip);
             // 
-            // RadioMad
+            // RadioNormal
             // 
-            this.RadioMad.AutoSize = true;
-            this.RadioMad.Location = new System.Drawing.Point(174, 71);
-            this.RadioMad.Name = "RadioMad";
-            this.RadioMad.Size = new System.Drawing.Size(46, 17);
-            this.RadioMad.TabIndex = 3;
-            this.RadioMad.TabStop = true;
-            this.RadioMad.Text = "Mad";
-            this.RadioMad.UseVisualStyleBackColor = true;
-            this.RadioMad.CheckedChanged += new System.EventHandler(this.RadioMad_CheckedChanged);
+            this.RadioNormal.AutoSize = true;
+            this.RadioNormal.Location = new System.Drawing.Point(174, 19);
+            this.RadioNormal.Name = "RadioNormal";
+            this.RadioNormal.Size = new System.Drawing.Size(58, 17);
+            this.RadioNormal.TabIndex = 1;
+            this.RadioNormal.TabStop = true;
+            this.RadioNormal.Text = "Normal";
+            this.RadioNormal.UseVisualStyleBackColor = true;
+            this.RadioNormal.CheckedChanged += new System.EventHandler(this.NormalTip);
+            // 
+            // RadioNone
+            // 
+            this.RadioNone.AutoSize = true;
+            this.RadioNone.Location = new System.Drawing.Point(61, 19);
+            this.RadioNone.Name = "RadioNone";
+            this.RadioNone.Size = new System.Drawing.Size(51, 17);
+            this.RadioNone.TabIndex = 0;
+            this.RadioNone.TabStop = true;
+            this.RadioNone.Text = "None";
+            this.RadioNone.UseVisualStyleBackColor = true;
+            // 
+            // PictureBox
+            // 
+            this.PictureBox.BackgroundImage = global::DanielGraceWinApp.Properties.Resources._375_3751752_dining_table_clipart_elegant_dining_dinner_table_clipart;
+            this.PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PictureBox.Location = new System.Drawing.Point(412, 65);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Size = new System.Drawing.Size(296, 270);
+            this.PictureBox.TabIndex = 2;
+            this.PictureBox.TabStop = false;
             // 
             // Tipster
             // 
@@ -191,22 +191,21 @@
             this.Controls.Add(this.LabelBill);
             this.Controls.Add(this.Quit);
             this.Controls.Add(this.Calculate);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PictureBox);
             this.Controls.Add(this.NumberPeople);
             this.Controls.Add(this.Bill);
             this.Name = "Tipster";
             this.Text = "Tipster";
-            this.Load += new System.EventHandler(this.Tipster_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.GroupTip.ResumeLayout(false);
             this.GroupTip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PictureBox;
         private System.Windows.Forms.Button Calculate;
         private System.Windows.Forms.Button Quit;
         private System.Windows.Forms.Label LabelBill;

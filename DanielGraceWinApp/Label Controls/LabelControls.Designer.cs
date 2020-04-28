@@ -46,9 +46,7 @@
             this.Greeting.Size = new System.Drawing.Size(370, 40);
             this.Greeting.TabIndex = 0;
             this.Greeting.Text = "Welcome to SuperSoft";
-            this.Greeting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Greeting.Click += new System.EventHandler(this.Greeting_Click);
-            // 
+            this.Greeting.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;            // 
             // Brag
             // 
             this.Brag.BackColor = System.Drawing.Color.Yellow;
@@ -60,9 +58,7 @@
             this.Brag.Size = new System.Drawing.Size(310, 70);
             this.Brag.TabIndex = 1;
             this.Brag.Text = "The BEST prices";
-            this.Brag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Brag.Click += new System.EventHandler(this.BragText);
-            // 
+            this.Brag.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;            // 
             // Quit
             // 
             this.Quit.Location = new System.Drawing.Point(682, 365);
@@ -71,7 +67,7 @@
             this.Quit.TabIndex = 2;
             this.Quit.Text = "Quit";
             this.Quit.UseVisualStyleBackColor = true;
-            this.Quit.Click += new System.EventHandler(this.Quit_Click);
+            this.Quit.Click += new System.EventHandler(this.Exit);
             // 
             // ComputerText
             // 
@@ -114,9 +110,7 @@
             this.Controls.Add(this.Greeting);
             this.ForeColor = System.Drawing.SystemColors.GrayText;
             this.Name = "LabelControls";
-            this.Text = "LabelControls";
-            this.Load += new System.EventHandler(this.LabelControls_Load);
-            this.ResumeLayout(false);
+            this.Text = "LabelControls";            this.ResumeLayout(false);
 
         }
 

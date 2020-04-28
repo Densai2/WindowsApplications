@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace DanielGraceWinApp.PizzaShop
 {
+    /// <summary>
+    /// This form allows the user to choose from 
+    /// different options for a pizza to then 
+    /// display the cost.
+    /// </summary>
     public partial class PizzaShop : Form
     {
         double toppingPrice, pizzaPrice, finalPrice;
@@ -18,7 +23,7 @@ namespace DanielGraceWinApp.PizzaShop
             InitializeComponent();
         }
 
-        private void Pineapple_CheckedChanged(object sender, EventArgs e)
+        private void Pineapple_Checked(object sender, EventArgs e)
         {
             if (Pineapple.Checked)
             {
@@ -32,22 +37,7 @@ namespace DanielGraceWinApp.PizzaShop
             EndCost.Text = "£ " + finalPrice.ToString("0.00");
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PizzaShop_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void grpPizzaCost_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Rhubard_CheckedChanged(object sender, EventArgs e)
+        private void Rhubard_Checked(object sender, EventArgs e)
         {
             if (Rhubard.Checked)
             {
@@ -61,7 +51,7 @@ namespace DanielGraceWinApp.PizzaShop
             EndCost.Text = "£ " + finalPrice.ToString("0.00");
         }
 
-        private void Large_CheckedChanged(object sender, EventArgs e)
+        private void Large_Checked(object sender, EventArgs e)
         {
             if (Large.Checked)
             {
@@ -71,7 +61,7 @@ namespace DanielGraceWinApp.PizzaShop
             EndCost.Text = "£ " + finalPrice.ToString("0.00");
         }
 
-        private void Medium_CheckedChanged(object sender, EventArgs e)
+        private void Medium_Checked(object sender, EventArgs e)
         {
             if (Medium.Checked)
             {
@@ -81,7 +71,7 @@ namespace DanielGraceWinApp.PizzaShop
             EndCost.Text = "£ " + finalPrice.ToString("0.00");
         }
 
-        private void Small_CheckedChanged(object sender, EventArgs e)
+        private void Small_Checked(object sender, EventArgs e)
         {
             if (Small.Checked)
             {
@@ -91,7 +81,7 @@ namespace DanielGraceWinApp.PizzaShop
             EndCost.Text = "£ " + finalPrice.ToString("0.00");
         }
 
-        private void Pepperoni_CheckedChanged(object sender, EventArgs e)
+        private void Pepperoni_Checked(object sender, EventArgs e)
         {
             if (Pepperoni.Checked)
             {
@@ -105,7 +95,7 @@ namespace DanielGraceWinApp.PizzaShop
             EndCost.Text = "£ " + finalPrice.ToString("0.00");
         }
 
-        private void Chocolate_CheckedChanged(object sender, EventArgs e)
+        private void Chocolate_Checked(object sender, EventArgs e)
         {
             if (Chocolate.Checked)
             {

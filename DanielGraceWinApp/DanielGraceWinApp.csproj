@@ -323,5 +323,11 @@
   <ItemGroup>
     <None Include="Resources\sainsburys-louise-bolton-car-damage.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table-chair-dining-room-furniture-neat-table.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\375-3751752_dining-table-clipart-elegant-dining-dinner-table-clipart.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

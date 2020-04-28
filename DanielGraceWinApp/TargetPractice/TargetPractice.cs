@@ -1,15 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DanielGraceWinApp.TargetPractice
 {
+    /// <summary>
+    /// This form has the user play a game
+    /// of clicking the target, and scoring
+    /// them on their accuracy.
+    /// </summary>
     public partial class TargetPractice : Form
     {
         private int x, y;
@@ -23,42 +22,37 @@ namespace DanielGraceWinApp.TargetPractice
             InitializeComponent();
         }
 
-        private void btnQuit_Click(object sender, EventArgs e)
+        private void Close(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void Target(object sender, EventArgs e)
         {
-            MessageBox.Show("Ouch!");
+            MessageBox.Show("Target hit!");
             hits = hits + 1;
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void TimerOne(object sender, EventArgs e)
         {
-            x = generator.Next(panel1.Width - 100);
-            y = generator.Next(panel1.Height - 100);
+            x = generator.Next(Pannel.Width - 100);
+            y = generator.Next(Pannel.Height - 100);
 
-            pictureBox1.Left = x;
-            pictureBox1.Top = y;
+            PictureTarget.Left = x;
+            PictureTarget.Top = y;
 
-            lblTotalHits.Text = "Hits = " + hits + " Misses = " + misses;
+            LabelTotalHits.Text = "Hits = " + hits + " Misses = " + misses;
 
             Refresh();
         }
 
-        private void panel1_Click(object sender, EventArgs e)
+        private void BackPannel(object sender, EventArgs e)
         {
             MessageBox.Show("You MISSED!");
             misses = misses + 1;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        private void MouseMovement(object sender, MouseEventArgs e)
         {
             double x, y;
             Point mousePointerLocation = e.Location;
@@ -115,18 +109,18 @@ namespace DanielGraceWinApp.TargetPractice
                 MessageBox.Show("Error");
             }
 
-            this.lblScore.Text = score.ToString();
+            this.LabelScore.Text = score.ToString();
 
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        private void Start(object sender, EventArgs e)
         {
-            timer1.Enabled = true;
+            Timer1.Enabled = true;
         }
 
-        private void btnStop_Click(object sender, EventArgs e)
+        private void Stop(object sender, EventArgs e)
         {
-            timer1.Enabled = false;
+            Timer1.Enabled = false;
         }
     }
 }
