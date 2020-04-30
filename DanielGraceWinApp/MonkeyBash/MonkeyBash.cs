@@ -55,7 +55,11 @@ namespace DanielGraceWinApp.MonkeyBash
             misses = misses + 1;
             MessageBox.Show("You MISSED!");
         }
-
+        /// <summary>
+        /// The timers will make the monkey change
+        /// positions on the screen based on the 
+        /// time that is input.
+        /// </summary>
         private void TimerTwo(object sender, EventArgs e)
         {
             x = generator.Next(Pannel.Width - 100);
@@ -86,7 +90,11 @@ namespace DanielGraceWinApp.MonkeyBash
             MessageBox.Show("Ouch!");
             hits = hits + 1;
         }
-
+        /// <summary>
+        /// The timers will make the monkey change
+        /// positions on the screen based on the 
+        /// time that is input.
+        /// </summary>
         private void TimerThree(object sender, EventArgs e)
         {
             x = generator.Next(Pannel.Width - 100);
@@ -99,7 +107,11 @@ namespace DanielGraceWinApp.MonkeyBash
 
             Refresh();
         }
-
+        /// <summary>
+        /// The timers will make the monkey change
+        /// positions on the screen based on the 
+        /// time that is input.
+        /// </summary>
         private void TimerFour(object sender, EventArgs e)
         {
             x = generator.Next(Pannel.Width - 100);
@@ -118,6 +130,11 @@ namespace DanielGraceWinApp.MonkeyBash
             InitializeComponent();
         }
 
+        /// <summary>
+        /// The timers will make the monkey change
+        /// positions on the screen based on the 
+        /// time that is input.
+        /// </summary>
         private void TimerOne(object sender, EventArgs e)
         {
             x = generator.Next(Pannel.Width - 100);

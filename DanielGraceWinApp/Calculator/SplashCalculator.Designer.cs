@@ -55,7 +55,6 @@
             this.Name = "SplashCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashCalculator";
-            this.Load += new System.EventHandler(this.SplashCalculator_Load);
             this.Click += new System.EventHandler(this.SplashCalculator_Click);
             this.ResumeLayout(false);
             this.PerformLayout();

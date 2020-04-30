@@ -54,7 +54,6 @@
             this.Name = "CalculatorEndScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalculatorEndScreen";
-            this.Load += new System.EventHandler(this.CalculatorEndScreen_Load);
             this.Click += new System.EventHandler(this.CalculatorEndScreen_Click);
             this.ResumeLayout(false);
             this.PerformLayout();

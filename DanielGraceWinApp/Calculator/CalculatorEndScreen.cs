@@ -22,11 +22,6 @@ namespace DanielGraceWinApp
             this.Close();
         }
 
-        private void CalculatorEndScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void CalculatorEndScreen_Click(object sender, EventArgs e)
         {
             this.Close();

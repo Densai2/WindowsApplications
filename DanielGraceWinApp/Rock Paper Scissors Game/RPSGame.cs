@@ -51,7 +51,12 @@ namespace DanielGraceWinApp
             UserPicture.Image = Image.FromFile("Scissors.png");
             userChoice = 3;
         }
-
+        /// <summary>
+        /// Once the play button is clicked, the colours
+        /// will be set to default and the computer will
+        /// choose a number between 1-3, giving rock, paper
+        /// or scissors
+        /// </summary>
         private void Play_Click(object sender, EventArgs e)
         {
             ClearColor();
@@ -87,7 +92,10 @@ namespace DanielGraceWinApp
         {
             playerScore.ToString();
         }
-
+        /// <summary>
+        /// If the user wins, the colours will be 
+        /// applied to the form
+        /// </summary>
         public void UserWins()
         {
             ResultText.BackColor = Color.Aqua;
@@ -101,6 +109,12 @@ namespace DanielGraceWinApp
             TextComputerScore.BackColor = Color.Aqua;
             TextComputerScore.ForeColor = Color.Orange;
         }
+        /// <summary>
+        /// Once play has been clicked the result will
+        /// be decided by these arguements. And when 
+        /// someone hits 20, or both the correct splash
+        /// screen will be displayed.
+        /// </summary>
         public void CheckResult()
         {
 
@@ -150,10 +164,10 @@ namespace DanielGraceWinApp
             {
 
 
-                if (playerScore >= 20)
+                if (computerScore >= 20 && playerScore >= 20)
                 {
-                    UserWin userWin = new UserWin();
-                    userWin.ShowDialog();
+                    Draw draw = new Draw();
+                    draw.ShowDialog();
                     Close();
                 }
                 else if (computerScore >= 20)
@@ -162,15 +176,18 @@ namespace DanielGraceWinApp
                     compWins.ShowDialog();
                     Close();
                 }
-                else
+                else if (playerScore >= 20)
                 {
-                    Draw draw = new Draw();
-                    draw.ShowDialog();
+                    UserWin userWin = new UserWin();
+                    userWin.ShowDialog();
                     Close();
                 }
             }
         }
-
+        /// <summary>
+        /// The colours will be set back to default if the 
+        /// user wins
+        /// </summary>
             public void ClearColor()
             {
                 ResultText.BackColor = Color.Purple;

@@ -26,14 +26,18 @@ namespace DataEntryForm
             Application.Exit();
         }
 
-        private void BestComputerText(object sender, EventArgs e)
+        private void BestComputer_Click(object sender, EventArgs e)
         {
-            ComputerText.Text = "Stunning computer, high fps! \n Selling for £596!";
+            Brag.Text = "Supa Dupa Computer\n Selling for £699";
+            Brag.BackColor = Color.Orange;
+            Brag.ForeColor = Color.White;
         }
 
-        private void BestSoftware(object sender, EventArgs e)
+        private void BestSoftware_Click(object sender, EventArgs e)
         {
-            SoftwareText.Text = "Stunning software, great compatability! \n Selling for £246!";
+            Brag.Text = "C#.NET for Dumbos\n A unbelievable bargain at £34,423.01";
+            Brag.BackColor = Color.Black;
+            Brag.ForeColor = Color.Yellow;
         }
     }
 }

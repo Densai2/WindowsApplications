@@ -23,7 +23,9 @@ namespace Calculation
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Exits the program with a dialog box.
+        /// </summary>
         private void ExitButton(object sender, EventArgs e)
         {
             CalculatorEndScreen calculatorEnd = new CalculatorEndScreen();
@@ -58,7 +60,10 @@ namespace Calculation
             answer = number1 * number2;
             ResultNumber.Text = answer.ToString();
         }
-
+        /// <summary>
+        /// Divides the input, and if the input is 
+        /// 0 then a message box will appear.
+        /// </summary>
         private void Divide(object sender, EventArgs e)
         {
             Double number1, number2, answer;
@@ -107,14 +112,6 @@ namespace Calculation
             ResultNumber.Text = "";
 
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Double number1, number2, answer;
-            number1 = Convert.ToDouble(FirstNumber.Text);
-            number2 = Convert.ToDouble(SecondNumber.Text);
-            answer = number1 + number2;
-            ResultNumber.Text = answer.ToString();
-        }
+        
     }
 }

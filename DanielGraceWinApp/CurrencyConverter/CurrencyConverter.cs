@@ -21,7 +21,10 @@ namespace DanielGraceWinApp
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Displays a dialog box to confirm the
+        /// user exiting the form
+        /// </summary>
         private void Confirmation(object sender, EventArgs e)
         {
             DialogResult resultMessage = MessageBox.Show("Are you sure?", "Confirmation", MessageBoxButtons.YesNo);

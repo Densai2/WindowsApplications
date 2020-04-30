@@ -27,7 +27,10 @@ namespace DanielGraceWinApp
         {
             Close();
         }
-
+        /// <summary>
+        /// User chooses a desert from the cases,
+        /// and from that the price will change.
+        /// </summary>
         private void DessertChoice(object sender, EventArgs e)
         {
             switch (Deserts.Text)
@@ -40,7 +43,10 @@ namespace DanielGraceWinApp
             totalcost = startercost + maincoursecost + dessertcost;
             FinalCost.Text = "£ " + totalcost.ToString("0.00");
         }
-
+        /// <summary>
+        /// User chooses a starter from the cases,
+        /// and from that the price will change.
+        /// </summary>
         private void StarterChoice(object sender, EventArgs e)
         {
             switch (Starters.Text)
@@ -53,7 +59,10 @@ namespace DanielGraceWinApp
             totalcost = startercost + maincoursecost + dessertcost;
             FinalCost.Text = "£ " + totalcost.ToString("0.00");
         }
-
+        /// <summary>
+        /// User chooses a main from the cases,
+        /// and from that the price will change.
+        /// </summary>
         private void MainChoice(object sender, EventArgs e)
         {
             switch (Mains.Text)

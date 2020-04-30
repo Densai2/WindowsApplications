@@ -41,6 +41,7 @@
             this.MessageChange = new System.Windows.Forms.Button();
             this.Town = new System.Windows.Forms.Label();
             this.TownBox = new System.Windows.Forms.TextBox();
+            this.LowerCase = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MainLabel
@@ -57,7 +58,7 @@
             // 
             // Quit
             // 
-            this.Quit.Location = new System.Drawing.Point(477, 292);
+            this.Quit.Location = new System.Drawing.Point(470, 297);
             this.Quit.Name = "Quit";
             this.Quit.Size = new System.Drawing.Size(75, 23);
             this.Quit.TabIndex = 1;
@@ -91,7 +92,7 @@
             this.Message.BackColor = System.Drawing.Color.Yellow;
             this.Message.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Message.Location = new System.Drawing.Point(140, 197);
+            this.Message.Location = new System.Drawing.Point(54, 206);
             this.Message.Name = "Message";
             this.Message.Size = new System.Drawing.Size(2, 26);
             this.Message.TabIndex = 4;
@@ -116,7 +117,7 @@
             // 
             // DisplayMessage
             // 
-            this.DisplayMessage.Location = new System.Drawing.Point(193, 292);
+            this.DisplayMessage.Location = new System.Drawing.Point(200, 295);
             this.DisplayMessage.Name = "DisplayMessage";
             this.DisplayMessage.Size = new System.Drawing.Size(75, 23);
             this.DisplayMessage.TabIndex = 7;
@@ -126,7 +127,7 @@
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(327, 292);
+            this.Clear.Location = new System.Drawing.Point(389, 296);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(75, 23);
             this.Clear.TabIndex = 8;
@@ -136,7 +137,7 @@
             // 
             // UpperCase
             // 
-            this.UpperCase.Location = new System.Drawing.Point(67, 292);
+            this.UpperCase.Location = new System.Drawing.Point(38, 295);
             this.UpperCase.Name = "UpperCase";
             this.UpperCase.Size = new System.Drawing.Size(75, 23);
             this.UpperCase.TabIndex = 9;
@@ -146,7 +147,7 @@
             // 
             // MessageChange
             // 
-            this.MessageChange.Location = new System.Drawing.Point(228, 324);
+            this.MessageChange.Location = new System.Drawing.Point(281, 295);
             this.MessageChange.Name = "MessageChange";
             this.MessageChange.Size = new System.Drawing.Size(102, 25);
             this.MessageChange.TabIndex = 10;
@@ -173,12 +174,23 @@
             this.TownBox.Size = new System.Drawing.Size(175, 29);
             this.TownBox.TabIndex = 12;
             // 
+            // LowerCase
+            // 
+            this.LowerCase.Location = new System.Drawing.Point(119, 295);
+            this.LowerCase.Name = "LowerCase";
+            this.LowerCase.Size = new System.Drawing.Size(75, 23);
+            this.LowerCase.TabIndex = 13;
+            this.LowerCase.Text = "Lower case";
+            this.LowerCase.UseVisualStyleBackColor = true;
+            this.LowerCase.Click += new System.EventHandler(this.Lowercase);
+            // 
             // DataEntryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(564, 361);
+            this.Controls.Add(this.LowerCase);
             this.Controls.Add(this.TownBox);
             this.Controls.Add(this.Town);
             this.Controls.Add(this.MessageChange);
@@ -216,5 +228,6 @@
         private System.Windows.Forms.Button MessageChange;
         private System.Windows.Forms.Label Town;
         private System.Windows.Forms.TextBox TownBox;
+        private System.Windows.Forms.Button LowerCase;
     }
 }

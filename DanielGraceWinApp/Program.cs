@@ -22,7 +22,7 @@ namespace DataEntryForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tipster());
+            Application.Run(new Calculator());
         }
     }
 }

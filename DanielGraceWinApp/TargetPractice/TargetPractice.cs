@@ -32,7 +32,10 @@ namespace DanielGraceWinApp.TargetPractice
             MessageBox.Show("Target hit!");
             hits = hits + 1;
         }
-
+        /// <summary>
+        /// This timer will decide when the target will move
+        /// on the screen, depending on the seconds given.
+        /// </summary>
         private void TimerOne(object sender, EventArgs e)
         {
             x = generator.Next(Pannel.Width - 100);
@@ -51,7 +54,10 @@ namespace DanielGraceWinApp.TargetPractice
             MessageBox.Show("You MISSED!");
             misses = misses + 1;
         }
-
+        /// <summary>
+        /// Depending on where the user clicks, the correct points
+        /// will be issued to the user's score using x and y.
+        /// </summary>
         private void MouseMovement(object sender, MouseEventArgs e)
         {
             double x, y;

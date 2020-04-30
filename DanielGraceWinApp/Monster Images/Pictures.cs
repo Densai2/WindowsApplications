@@ -21,7 +21,10 @@ namespace DanielGraceWinApp
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Depending on the user's choice, an image
+        /// will appear on the screen.
+        /// </summary>
         private void MonsterSelected(object sender, EventArgs e)
         {
             if(UserChoice.Text == "Alien")

@@ -9,7 +9,11 @@ namespace DanielGraceWinApp.Tipster
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Once the calculate button is clicked, the inputs
+        /// will be transferred from Tipster to Calculate
+        /// to work out the tip.
+        /// </summary>
         private void Calculate_Click(object sender, EventArgs e)
         {
             Convert.ToString(Bill.Text);

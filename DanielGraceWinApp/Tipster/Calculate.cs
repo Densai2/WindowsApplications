@@ -23,7 +23,11 @@ namespace DanielGraceWinApp.Tipster
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Tries toe calculate the amount for each person,
+        /// and if there is an issue then an error will be
+        /// displayed.
+        /// </summary>
         private void Calculation(object sender, EventArgs e)
         {
             double n1, n2, answer;

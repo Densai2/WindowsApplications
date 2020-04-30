@@ -16,6 +16,8 @@ namespace DanielGraceWinApp
     /// </summary>
     public partial class MyPad : Form
     {
+        private int fontSize = 0;
+
         public MyPad()
         {
             InitializeComponent();
@@ -50,6 +52,7 @@ namespace DanielGraceWinApp
 
         private void OpenFile(object sender, EventArgs e)
         {
+            ofd.ShowDialog();
             txtMain.LoadFile(ofd.FileName);
         }
 
@@ -70,11 +73,13 @@ namespace DanielGraceWinApp
             cd.ShowDialog();
             txtMain.ForeColor = cd.Color;
         }
-
+        /// <summary>
+        /// The scrollbar is able to change the 
+        /// size of the text.
+        /// </summary>
         private void ScrollBar(object sender, ScrollEventArgs e)
         {
-            Font f = new Font(txtMain.Font.Name, 20, FontStyle.Regular);
-            txtMain.SelectionFont = f;
+            txtMain.Font = new Font(txtMain.Font.FontFamily, HScrollBar.Value);
         }
     }
 }

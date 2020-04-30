@@ -35,6 +35,7 @@ namespace DataEntryForm
 
         private void MessageToUser(object sender, EventArgs e)
         {
+            this.BackColor = Color.Orange;
             Message.Text = "Hey, " + FirstNameBox.Text + " " + SecondNameBox.Text + "\n Happy programming" +  "\n Also, I didn't know you lived in " + TownBox.Text  + "!";
         }
 
@@ -45,8 +46,13 @@ namespace DataEntryForm
 
         private void ChangeColour(object sender, EventArgs e)
         {
-            this.BackColor = Color.Red;
-            
+            Message.Text = "Get on with it " + FirstNameBox.Text;
+            this.BackColor = Color.Red; 
+        }
+
+        private void Lowercase(object sender, EventArgs e)
+        {
+            Message.Text = Message.Text.ToLower();
         }
     }
 }
