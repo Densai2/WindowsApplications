@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator\Calculator.cs">
+    <Compile Include="Calculator form\Calculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calculator\Calculator.Designer.cs">
+    <Compile Include="Calculator form\Calculator.Designer.cs">
       <DependentUpon>Calculator.cs</DependentUpon>
     </Compile>
-    <Compile Include="Calculator\CalculatorEndScreen.cs">
+    <Compile Include="Calculator form\CalculatorEndScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calculator\CalculatorEndScreen.Designer.cs">
+    <Compile Include="Calculator form\CalculatorEndScreen.Designer.cs">
       <DependentUpon>CalculatorEndScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="MonkeyBash\MonkeyBash.cs">
@@ -70,16 +70,16 @@
     <Compile Include="MyPad\MyPad.Designer.cs">
       <DependentUpon>MyPad.cs</DependentUpon>
     </Compile>
-    <Compile Include="Monster Images\Pictures.cs">
+    <Compile Include="Choose the picture\Pictures.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Monster Images\Pictures.Designer.cs">
+    <Compile Include="Choose the picture\Pictures.Designer.cs">
       <DependentUpon>Pictures.cs</DependentUpon>
     </Compile>
-    <Compile Include="PizzaShop\PizzaShop.cs">
+    <Compile Include="Pizza order form\PizzaShop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PizzaShop\PizzaShop.Designer.cs">
+    <Compile Include="Pizza order form\PizzaShop.Designer.cs">
       <DependentUpon>PizzaShop.cs</DependentUpon>
     </Compile>
     <Compile Include="Posh Nosh\PoshNosh.cs">
@@ -112,10 +112,10 @@
     <Compile Include="Rock Paper Scissors Game\Draw.Designer.cs">
       <DependentUpon>Draw.cs</DependentUpon>
     </Compile>
-    <Compile Include="Label Controls\LabelControls.cs">
+    <Compile Include="Welcome Form\LabelControls.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Label Controls\LabelControls.Designer.cs">
+    <Compile Include="Welcome Form\LabelControls.Designer.cs">
       <DependentUpon>LabelControls.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -132,10 +132,10 @@
     <Compile Include="Rock Paper Scissors Game\RPSGameOpenSplash.Designer.cs">
       <DependentUpon>RPSGameOpenSplash.cs</DependentUpon>
     </Compile>
-    <Compile Include="Calculator\SplashCalculator.cs">
+    <Compile Include="Calculator form\SplashCalculator.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calculator\SplashCalculator.Designer.cs">
+    <Compile Include="Calculator form\SplashCalculator.Designer.cs">
       <DependentUpon>SplashCalculator.cs</DependentUpon>
     </Compile>
     <Compile Include="Rock Paper Scissors Game\UserWin.cs">
@@ -144,10 +144,10 @@
     <Compile Include="Rock Paper Scissors Game\UserWin.Designer.cs">
       <DependentUpon>UserWin.cs</DependentUpon>
     </Compile>
-    <Compile Include="TargetPractice\TargetPractice.cs">
+    <Compile Include="Hit the target\TargetPractice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TargetPractice\TargetPractice.Designer.cs">
+    <Compile Include="Hit the target\TargetPractice.Designer.cs">
       <DependentUpon>TargetPractice.cs</DependentUpon>
     </Compile>
     <Compile Include="Tipster\Calculate.cs">
@@ -162,10 +162,10 @@
     <Compile Include="Tipster\Tipster.Designer.cs">
       <DependentUpon>Tipster.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Calculator\Calculator.resx">
+    <EmbeddedResource Include="Calculator form\Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Calculator\CalculatorEndScreen.resx">
+    <EmbeddedResource Include="Calculator form\CalculatorEndScreen.resx">
       <DependentUpon>CalculatorEndScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MonkeyBash\MonkeyBash.resx">
@@ -174,10 +174,10 @@
     <EmbeddedResource Include="MyPad\MyPad.resx">
       <DependentUpon>MyPad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Monster Images\Pictures.resx">
+    <EmbeddedResource Include="Choose the picture\Pictures.resx">
       <DependentUpon>Pictures.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PizzaShop\PizzaShop.resx">
+    <EmbeddedResource Include="Pizza order form\PizzaShop.resx">
       <DependentUpon>PizzaShop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Posh Nosh\PoshNosh.resx">
@@ -195,7 +195,7 @@
     <EmbeddedResource Include="Rock Paper Scissors Game\Draw.resx">
       <DependentUpon>Draw.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Label Controls\LabelControls.resx">
+    <EmbeddedResource Include="Welcome Form\LabelControls.resx">
       <DependentUpon>LabelControls.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -214,13 +214,13 @@
     <EmbeddedResource Include="Rock Paper Scissors Game\RPSGameOpenSplash.resx">
       <DependentUpon>RPSGameOpenSplash.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Calculator\SplashCalculator.resx">
+    <EmbeddedResource Include="Calculator form\SplashCalculator.resx">
       <DependentUpon>SplashCalculator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Rock Paper Scissors Game\UserWin.resx">
       <DependentUpon>UserWin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TargetPractice\TargetPractice.resx">
+    <EmbeddedResource Include="Hit the target\TargetPractice.resx">
       <DependentUpon>TargetPractice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tipster\Calculate.resx">
